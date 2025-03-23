@@ -1,0 +1,1389 @@
+id,language,buggy_code,fixed_code,description,label,time_to_fix,complexity_score,lines_of_code,bug_type,severity_level,date_reported,date_fixed,fix_status,developer_id
+1,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,111,8.48,17,Compilation,Low,2023-03-02,2024-12-09,Verified,1027
+2,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,142,1.59,34,Syntax,Low,2022-02-11,2021-09-05,In-Progress,2158
+3,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,240,9.29,46,Syntax,Critical,2023-03-06,2023-02-25,Verified,3341
+4,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,76,8.93,32,Runtime,Medium,2024-08-14,2020-10-03,Fixed,1020
+5,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,189,9.79,34,Syntax,Low,2021-04-02,2020-03-30,In-Progress,4676
+6,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,234,9.79,22,Runtime,High,2024-04-10,2020-03-27,Pending,1799
+7,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,219,9.1,17,Syntax,Critical,2024-03-10,2021-03-07,Verified,3154
+8,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,190,3.07,18,Performance,Low,2020-03-28,2024-06-06,In-Progress,4052
+9,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,189,3.42,15,Security,Critical,2020-04-02,2024-07-31,Verified,3227
+10,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,255,2.16,8,Compilation,Low,2023-03-24,2020-10-21,Pending,3401
+11,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,232,4.55,20,Runtime,Critical,2021-04-28,2022-10-03,Pending,2881
+12,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,46,2.39,15,Runtime,Low,2021-08-03,2023-03-25,In-Progress,3324
+13,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,178,3.18,38,Performance,Critical,2024-08-22,2022-06-06,Verified,2209
+14,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,89,8.06,44,Performance,High,2021-02-16,2020-11-21,Pending,2793
+15,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,113,8.37,47,Security,Medium,2021-04-29,2022-05-22,Verified,3336
+16,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,187,7.28,39,Runtime,High,2024-11-13,2022-11-10,Pending,2469
+17,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,66,8.43,9,Compilation,High,2020-11-01,2024-01-23,In-Progress,4226
+18,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,26,3.7,43,Runtime,Low,2024-04-19,2021-08-23,Pending,1450
+19,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,292,7.63,40,Syntax,Medium,2024-11-13,2020-06-16,Pending,4084
+20,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,74,1.27,47,Logic,Low,2023-09-04,2024-04-22,Pending,4365
+21,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,65,5.58,10,Logic,Medium,2023-06-02,2021-07-25,Pending,3446
+22,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,221,1.86,39,Syntax,High,2023-08-29,2023-11-13,In-Progress,2378
+23,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,294,1.42,18,Runtime,Critical,2020-09-23,2023-12-26,Pending,1290
+24,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,95,5.71,6,Compilation,Critical,2023-05-04,2024-11-18,In-Progress,2036
+25,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,178,2.69,50,Syntax,Low,2021-08-22,2022-09-07,Pending,3553
+26,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,142,2.75,12,Syntax,Critical,2020-07-06,2021-02-07,Pending,1598
+27,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,135,5.28,18,Logic,High,2021-01-30,2020-08-21,Fixed,2034
+28,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,184,9.71,11,Syntax,Low,2022-12-12,2021-05-22,Pending,4491
+29,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,18,8.41,6,Compilation,Critical,2020-10-06,2021-02-10,Pending,4763
+30,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,174,1.78,42,Runtime,High,2022-04-29,2023-01-28,Fixed,4395
+31,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,295,2.6,7,Compilation,Critical,2024-08-21,2024-08-11,Fixed,1988
+32,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,266,5.2,17,Runtime,Critical,2024-09-24,2020-01-17,Pending,2316
+33,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,52,6.1,36,Logic,Low,2021-04-21,2021-03-06,In-Progress,2831
+34,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,161,7.95,10,Security,Critical,2020-11-12,2023-09-10,Verified,4914
+35,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,162,9.45,33,Logic,High,2022-10-18,2023-10-09,Verified,4893
+36,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,161,7.1,22,Logic,Low,2020-05-11,2021-07-01,Verified,4301
+37,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,166,8.24,28,Security,Low,2023-05-02,2023-11-26,Verified,2906
+38,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,206,7.81,16,Performance,High,2024-10-11,2023-07-03,Pending,4064
+39,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,250,9.29,49,Performance,Low,2023-12-25,2021-08-07,Verified,1254
+40,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,65,5.59,21,Logic,Critical,2022-01-08,2022-09-20,Verified,2958
+41,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,106,7.34,38,Logic,Low,2020-01-08,2020-04-16,In-Progress,3893
+42,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,270,9.58,40,Security,Medium,2021-08-24,2024-06-09,Verified,4219
+43,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,87,4.97,50,Syntax,Critical,2024-05-22,2022-07-10,In-Progress,2053
+44,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,153,5.06,23,Security,Low,2024-04-27,2023-02-11,Pending,2830
+45,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,208,3.5,49,Security,Critical,2024-01-31,2024-08-31,Pending,4203
+46,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,241,6.14,13,Performance,High,2020-09-12,2024-03-10,Pending,3822
+47,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,211,2.87,7,Syntax,High,2020-04-10,2022-09-01,In-Progress,3384
+48,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,278,8.89,15,Logic,Low,2021-07-21,2024-02-29,Pending,2983
+49,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,170,7.28,19,Logic,Low,2022-06-29,2023-06-05,Fixed,2070
+50,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,265,5.57,6,Runtime,Medium,2020-08-26,2022-01-04,Pending,1447
+51,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,102,5.5,34,Performance,Low,2024-08-16,2022-11-24,Pending,3166
+52,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,44,1.45,38,Runtime,Critical,2022-10-05,2024-07-06,In-Progress,2533
+53,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,295,6.19,15,Runtime,Medium,2020-09-05,2021-08-25,Pending,2002
+54,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,157,9.14,13,Runtime,Low,2021-11-18,2023-02-02,Verified,1935
+55,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,221,3.81,31,Runtime,Low,2020-07-30,2023-02-21,Fixed,1363
+56,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,219,9.75,18,Syntax,Medium,2020-06-18,2023-05-08,Pending,1211
+57,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,12,6.76,26,Logic,Medium,2020-05-09,2021-07-03,In-Progress,3150
+58,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,118,4.66,9,Runtime,Critical,2021-10-02,2023-02-25,Fixed,4273
+59,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,158,8.22,12,Syntax,Medium,2020-06-11,2024-06-28,Verified,1553
+60,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,124,2.42,32,Performance,High,2024-12-12,2023-06-18,Pending,2198
+61,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,152,5.38,27,Runtime,Critical,2020-10-24,2024-12-05,Verified,3701
+62,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,79,2.32,46,Compilation,Critical,2024-07-10,2024-08-08,Pending,4962
+63,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,32,3.75,44,Compilation,Medium,2022-05-30,2023-02-08,Fixed,1262
+64,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,10,1.69,42,Performance,Critical,2020-04-21,2020-04-11,Pending,1657
+65,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,141,3.69,47,Performance,Low,2020-07-13,2020-02-25,Pending,1029
+66,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,57,6.0,9,Compilation,High,2022-05-11,2021-05-31,Verified,3699
+67,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,264,9.27,16,Runtime,High,2022-12-21,2020-09-27,In-Progress,1262
+68,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,216,4.5,21,Runtime,Medium,2022-04-29,2021-02-28,Pending,1018
+69,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,126,8.9,30,Compilation,Critical,2021-07-02,2022-10-14,Pending,1082
+70,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,193,1.1,14,Syntax,Critical,2020-05-20,2024-01-19,Fixed,2605
+71,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,237,7.04,7,Performance,Low,2024-09-21,2023-05-12,Verified,1794
+72,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,10,4.34,10,Compilation,Low,2023-04-11,2024-09-27,In-Progress,1375
+73,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,211,4.49,29,Compilation,Low,2022-10-24,2024-10-05,In-Progress,1701
+74,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,258,4.95,29,Runtime,Critical,2024-11-11,2021-11-02,Pending,1708
+75,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,173,4.5,19,Runtime,Medium,2023-08-22,2020-07-22,Pending,3167
+76,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,186,4.53,21,Runtime,Critical,2024-06-02,2021-07-20,Fixed,4125
+77,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,266,3.51,8,Logic,High,2020-06-27,2023-11-21,Fixed,1303
+78,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,134,8.55,16,Runtime,Medium,2022-04-26,2020-02-14,Verified,3574
+79,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,125,8.56,46,Logic,High,2021-04-14,2024-05-27,Pending,3751
+80,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,88,3.04,33,Runtime,High,2024-06-18,2022-10-30,Verified,1229
+81,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,245,7.51,35,Syntax,High,2023-03-02,2022-05-31,In-Progress,3902
+82,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,130,5.35,32,Runtime,Critical,2023-12-02,2022-01-07,Verified,4299
+83,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,144,3.63,15,Compilation,Medium,2020-12-18,2022-04-17,Fixed,1617
+84,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,89,8.25,23,Logic,Medium,2020-07-19,2020-12-11,In-Progress,4796
+85,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,117,2.53,16,Compilation,Medium,2021-08-24,2022-03-11,Pending,1063
+86,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,182,1.71,10,Logic,Low,2023-02-03,2023-08-24,Fixed,4303
+87,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,176,6.22,39,Syntax,Critical,2021-12-16,2021-09-11,In-Progress,2497
+88,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,51,8.66,18,Performance,High,2020-10-03,2020-05-12,Verified,1334
+89,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,34,5.21,10,Security,High,2021-01-05,2024-11-22,Pending,2633
+90,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,28,8.85,5,Runtime,Critical,2024-11-15,2024-07-31,In-Progress,1374
+91,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,70,8.0,41,Security,Medium,2024-02-25,2024-03-31,Verified,3956
+92,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,90,3.56,43,Syntax,Low,2024-11-14,2020-01-24,In-Progress,2974
+93,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,221,9.12,36,Compilation,Medium,2022-01-15,2023-06-21,Verified,1309
+94,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,27,7.55,16,Compilation,Low,2023-01-16,2020-10-13,Pending,1800
+95,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,283,2.44,47,Runtime,Low,2022-11-21,2022-05-15,Pending,3851
+96,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,208,2.75,24,Performance,High,2020-02-27,2022-11-13,Pending,4947
+97,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,236,2.27,26,Logic,High,2020-03-23,2020-09-28,In-Progress,1059
+98,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,288,6.6,26,Runtime,Critical,2022-10-13,2024-06-23,Pending,4976
+99,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,50,1.45,11,Security,Medium,2021-10-01,2020-09-21,Pending,3678
+100,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,108,7.38,44,Runtime,Low,2021-07-15,2020-03-07,Verified,1258
+101,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,244,1.82,50,Logic,Medium,2024-08-21,2020-09-26,Verified,3555
+102,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,34,5.4,23,Compilation,Low,2023-11-05,2024-10-29,Verified,2943
+103,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,102,3.0,42,Security,Medium,2022-09-23,2020-01-20,In-Progress,4927
+104,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,97,4.13,33,Runtime,Low,2021-04-06,2021-12-28,Verified,1954
+105,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,142,5.0,38,Syntax,Medium,2023-08-10,2023-04-30,Fixed,2993
+106,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,10,1.97,31,Syntax,High,2023-03-25,2021-04-10,Pending,4540
+107,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,28,8.57,12,Security,Critical,2021-07-19,2021-10-03,Verified,1917
+108,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,205,8.36,6,Security,Low,2022-04-14,2024-06-29,Verified,3029
+109,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,91,9.44,50,Logic,Medium,2024-09-15,2024-07-01,In-Progress,2475
+110,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,11,3.8,42,Security,Low,2020-01-06,2020-09-02,Verified,2699
+111,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,34,1.98,50,Syntax,Medium,2023-07-30,2023-03-02,Verified,3740
+112,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,134,7.21,24,Runtime,High,2022-05-10,2023-02-22,Pending,2584
+113,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,120,1.85,16,Syntax,Critical,2023-10-25,2022-07-09,Fixed,3231
+114,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,184,7.26,31,Syntax,Critical,2024-01-28,2022-09-21,Pending,3213
+115,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,188,7.11,25,Compilation,Low,2023-11-19,2020-12-03,Verified,1888
+116,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,31,1.03,22,Performance,High,2020-02-11,2021-04-06,In-Progress,2042
+117,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,44,6.78,13,Compilation,Critical,2022-09-25,2020-08-02,Pending,1256
+118,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,11,2.43,7,Logic,Low,2022-11-11,2023-05-28,Verified,3454
+119,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,177,7.74,49,Syntax,Low,2024-07-12,2020-09-05,Verified,3544
+120,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,235,2.4,17,Performance,Low,2023-09-04,2020-02-05,Fixed,4656
+121,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,13,7.3,15,Security,Low,2023-08-22,2022-09-06,Fixed,4694
+122,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,167,3.28,6,Security,Low,2020-09-15,2021-03-03,Fixed,4418
+123,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,93,4.77,24,Compilation,Low,2021-05-15,2023-07-09,Verified,4936
+124,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,218,8.66,30,Security,High,2022-09-09,2020-11-03,Verified,1736
+125,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,273,6.68,39,Runtime,Critical,2020-11-29,2022-03-10,Fixed,1308
+126,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,109,1.93,24,Security,Critical,2022-12-30,2022-04-19,In-Progress,2475
+127,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,297,2.65,26,Compilation,Low,2020-07-12,2021-11-23,In-Progress,2205
+128,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,101,8.27,25,Syntax,Low,2021-09-17,2024-06-11,Verified,2595
+129,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,28,4.07,23,Runtime,Critical,2022-07-19,2023-05-23,Verified,3811
+130,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,131,3.87,38,Syntax,High,2024-07-03,2022-11-18,Fixed,4662
+131,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,281,6.07,8,Performance,Critical,2022-10-10,2023-01-10,Pending,1523
+132,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,166,2.71,25,Runtime,Critical,2024-08-20,2024-12-25,Pending,3868
+133,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,160,6.51,44,Performance,Medium,2024-05-20,2021-01-18,In-Progress,2535
+134,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,102,6.43,38,Logic,Low,2021-04-04,2023-09-13,Pending,4945
+135,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,136,8.26,8,Runtime,High,2021-03-20,2020-03-31,In-Progress,1031
+136,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,61,9.34,18,Security,High,2024-08-09,2024-04-05,Fixed,2233
+137,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,89,4.68,31,Compilation,Low,2023-04-20,2020-04-19,Verified,1110
+138,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,296,1.55,25,Runtime,Critical,2024-11-05,2021-03-25,Fixed,2400
+139,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,195,3.25,7,Performance,Critical,2024-03-22,2024-10-16,In-Progress,3595
+140,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,225,4.7,38,Compilation,Low,2022-02-17,2023-06-27,In-Progress,4986
+141,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,165,9.31,18,Logic,Medium,2020-06-26,2021-11-24,Verified,4223
+142,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,56,1.98,45,Security,High,2021-07-10,2021-02-19,Verified,3889
+143,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,115,2.96,29,Logic,Critical,2020-10-17,2022-10-02,Pending,2349
+144,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,132,5.43,40,Security,Low,2023-06-01,2024-08-07,Fixed,4140
+145,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,144,1.72,12,Runtime,Low,2022-12-04,2023-05-01,In-Progress,3231
+146,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,108,8.6,23,Security,Medium,2020-07-24,2022-04-10,Verified,3505
+147,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,247,5.05,21,Syntax,Low,2024-10-12,2020-12-21,Pending,2459
+148,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,129,1.37,25,Compilation,Low,2020-10-17,2021-04-13,Verified,2021
+149,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,209,1.1,26,Runtime,Critical,2021-07-13,2020-10-09,Verified,1100
+150,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,64,2.02,40,Compilation,Low,2023-10-22,2024-06-27,Fixed,2181
+151,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,42,8.92,22,Performance,Critical,2020-08-24,2024-01-26,Pending,1084
+152,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,42,9.92,32,Logic,High,2020-01-28,2023-03-16,Fixed,4553
+153,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,17,9.97,29,Syntax,Critical,2021-03-03,2024-05-09,Fixed,1342
+154,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,172,6.26,38,Performance,High,2020-12-16,2024-04-18,Verified,2293
+155,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,258,7.44,17,Security,High,2024-02-27,2021-07-17,Pending,1397
+156,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,188,7.93,12,Logic,Low,2022-02-17,2024-07-09,In-Progress,2683
+157,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,145,1.77,28,Performance,Critical,2024-10-18,2020-02-03,Verified,3950
+158,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,213,7.27,45,Runtime,Low,2024-02-29,2024-08-08,Verified,3267
+159,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,287,6.24,28,Syntax,Critical,2020-01-19,2020-12-19,Fixed,3005
+160,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,77,1.19,36,Syntax,Medium,2024-01-31,2023-10-30,Pending,1929
+161,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,88,2.7,12,Logic,Medium,2023-04-20,2023-01-09,In-Progress,2561
+162,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,28,4.88,35,Syntax,High,2020-03-19,2022-03-18,Verified,2367
+163,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,14,6.67,35,Compilation,High,2024-03-29,2022-11-23,Verified,2187
+164,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,104,9.76,40,Security,Critical,2024-01-06,2022-04-27,Verified,1162
+165,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,277,1.83,26,Syntax,Medium,2020-08-18,2022-09-03,Verified,2221
+166,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,215,7.37,31,Performance,Low,2023-05-03,2024-12-18,Verified,1292
+167,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,211,9.59,13,Security,High,2022-05-05,2023-01-07,Verified,3567
+168,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,117,4.31,18,Compilation,Low,2023-01-13,2021-10-15,Fixed,3748
+169,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,195,3.47,30,Runtime,Medium,2024-02-06,2024-01-24,In-Progress,4494
+170,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,24,7.46,40,Compilation,High,2022-03-18,2023-03-23,In-Progress,4343
+171,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,136,2.86,34,Logic,Medium,2021-04-22,2024-05-20,In-Progress,3017
+172,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,294,3.26,42,Logic,High,2023-01-25,2022-07-22,Verified,4538
+173,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,111,4.55,49,Runtime,Medium,2020-10-19,2023-03-25,Verified,2598
+174,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,125,1.93,22,Runtime,Low,2020-03-06,2021-12-23,Verified,2629
+175,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,235,2.71,32,Syntax,Low,2020-01-20,2021-10-12,Pending,4854
+176,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,95,6.37,12,Runtime,Medium,2020-11-10,2023-02-27,In-Progress,3538
+177,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,81,7.1,37,Security,Critical,2024-01-06,2022-01-04,Verified,4761
+178,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,232,8.4,24,Runtime,Critical,2020-11-24,2023-04-03,Fixed,3446
+179,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,131,1.49,20,Compilation,High,2020-12-11,2023-02-25,Pending,4741
+180,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,289,4.78,13,Compilation,Low,2024-11-12,2022-11-16,Fixed,4047
+181,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,273,3.32,23,Logic,Medium,2023-03-21,2023-11-18,Pending,4507
+182,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,33,4.99,6,Runtime,Medium,2021-09-06,2021-01-17,In-Progress,3461
+183,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,223,5.92,34,Runtime,Medium,2022-05-09,2021-08-20,Pending,1542
+184,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,97,1.46,40,Syntax,Medium,2022-12-16,2022-09-16,In-Progress,3035
+185,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,289,7.29,18,Runtime,Critical,2020-09-02,2022-01-20,Fixed,1455
+186,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,191,9.2,13,Performance,Medium,2020-08-18,2021-09-04,Fixed,3203
+187,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,152,5.86,34,Compilation,Medium,2022-04-20,2021-03-13,Verified,4623
+188,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,180,9.48,12,Syntax,Critical,2020-07-18,2024-09-28,Fixed,3644
+189,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,127,2.15,40,Logic,Low,2024-12-01,2022-08-07,Verified,3114
+190,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,186,4.44,6,Performance,Low,2021-06-12,2024-12-21,Fixed,4242
+191,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,198,4.46,27,Compilation,High,2024-07-04,2024-11-01,Fixed,1001
+192,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,40,1.93,7,Security,Low,2024-11-25,2024-10-26,Pending,3862
+193,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,234,6.06,5,Logic,Critical,2024-01-21,2022-11-24,Fixed,2614
+194,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,114,7.64,42,Performance,Medium,2022-06-08,2023-08-28,Pending,3087
+195,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,237,7.23,49,Security,Medium,2020-02-10,2023-01-08,Fixed,1652
+196,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,175,6.23,47,Compilation,High,2023-08-30,2022-04-18,Pending,4446
+197,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,296,5.31,29,Logic,Medium,2020-09-04,2024-08-18,In-Progress,3244
+198,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,95,2.74,44,Performance,Critical,2023-07-09,2024-01-08,In-Progress,1563
+199,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,91,1.09,45,Security,Medium,2022-09-19,2020-12-15,Fixed,3306
+200,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,77,3.13,7,Security,Low,2024-02-07,2021-04-14,In-Progress,2761
+201,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,168,4.98,41,Runtime,Critical,2022-10-23,2023-08-23,In-Progress,4139
+202,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,131,8.85,10,Runtime,Critical,2022-06-21,2023-07-14,Pending,1253
+203,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,97,1.22,32,Compilation,Critical,2021-12-20,2023-05-07,Pending,4625
+204,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,203,5.5,19,Compilation,Critical,2020-03-31,2023-02-16,Verified,4674
+205,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,127,2.36,48,Performance,Medium,2021-09-28,2024-09-05,Verified,1995
+206,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,89,3.85,26,Syntax,Low,2020-11-27,2020-04-22,Pending,1090
+207,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,61,1.96,9,Compilation,Low,2024-11-28,2023-07-17,Fixed,4926
+208,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,51,1.92,31,Performance,Low,2022-12-03,2022-01-26,Pending,3686
+209,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,226,2.91,47,Compilation,Critical,2020-06-14,2020-03-16,Verified,2755
+210,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,262,3.67,29,Syntax,Medium,2024-01-23,2020-08-07,Pending,1028
+211,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,159,8.62,43,Security,High,2024-08-18,2023-03-25,Fixed,3542
+212,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,95,1.5,36,Runtime,Critical,2021-05-08,2020-07-07,Fixed,4183
+213,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,259,1.37,43,Syntax,Medium,2023-07-01,2024-10-02,Pending,2485
+214,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,225,1.83,25,Syntax,Low,2023-05-02,2020-06-19,Fixed,1438
+215,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,141,3.74,8,Logic,High,2022-12-25,2024-04-09,Pending,2709
+216,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,142,5.48,13,Performance,Low,2021-03-27,2021-01-21,In-Progress,2025
+217,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,61,2.59,50,Security,High,2024-09-08,2021-02-26,Pending,1370
+218,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,231,2.11,33,Performance,Low,2020-11-08,2020-04-19,Verified,2579
+219,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,184,6.97,24,Runtime,Medium,2020-01-02,2023-10-10,Pending,2796
+220,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,49,3.05,15,Runtime,High,2022-08-11,2020-04-30,Pending,4687
+221,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,59,4.03,47,Security,Low,2020-04-08,2022-09-15,Pending,3572
+222,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,258,7.38,28,Compilation,Low,2023-09-17,2022-07-08,Verified,3146
+223,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,86,7.91,39,Compilation,Critical,2021-01-20,2021-05-31,Pending,3495
+224,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,204,8.45,39,Runtime,Medium,2023-04-09,2022-09-02,Fixed,2595
+225,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,183,9.69,47,Logic,High,2023-03-27,2021-09-07,In-Progress,4741
+226,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,167,1.79,11,Logic,Low,2023-07-29,2023-10-22,Verified,4545
+227,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,264,2.43,10,Runtime,Low,2024-08-15,2023-04-05,In-Progress,4656
+228,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,164,2.33,16,Security,Low,2021-08-27,2021-09-10,Verified,4182
+229,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,288,4.59,8,Security,High,2021-01-17,2023-07-16,In-Progress,4668
+230,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,175,6.14,14,Compilation,Critical,2022-11-14,2022-10-04,Fixed,4833
+231,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,53,4.3,33,Logic,High,2024-06-11,2021-12-25,Pending,1499
+232,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,107,2.58,19,Compilation,Critical,2020-09-11,2021-06-20,Pending,2867
+233,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,136,7.29,45,Performance,High,2022-12-11,2022-10-21,Pending,3511
+234,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,219,4.17,35,Syntax,Critical,2024-12-23,2024-08-29,In-Progress,4462
+235,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,142,4.7,22,Logic,Critical,2023-01-28,2021-10-09,Fixed,3651
+236,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,21,1.75,26,Syntax,Low,2022-10-20,2021-08-28,In-Progress,3249
+237,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,285,8.66,26,Security,High,2021-03-21,2024-06-06,Fixed,3299
+238,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,236,7.54,43,Performance,Low,2023-08-19,2022-02-25,Fixed,3829
+239,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,55,8.2,49,Runtime,Low,2021-03-30,2024-12-31,In-Progress,3005
+240,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,295,8.84,48,Performance,Low,2020-11-10,2020-03-04,Fixed,4304
+241,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,139,7.82,27,Runtime,Medium,2023-01-29,2022-04-29,Fixed,3404
+242,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,46,7.61,42,Runtime,Critical,2022-02-02,2024-06-28,Verified,3945
+243,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,180,2.28,46,Compilation,Medium,2021-09-06,2024-05-01,Fixed,3382
+244,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,138,4.52,38,Runtime,Critical,2023-05-25,2021-12-26,Pending,3662
+245,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,17,5.62,42,Logic,Medium,2024-04-27,2021-10-10,Verified,3547
+246,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,220,3.67,38,Compilation,Critical,2020-03-12,2024-09-24,Fixed,1362
+247,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,268,5.14,27,Runtime,High,2020-06-13,2022-09-20,Pending,1710
+248,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,275,2.45,34,Performance,High,2020-03-28,2020-01-03,Pending,3476
+249,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,258,5.57,35,Logic,Critical,2023-01-18,2020-06-14,Verified,3562
+250,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,151,9.87,13,Runtime,High,2021-04-20,2022-03-17,In-Progress,3277
+251,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,144,4.76,48,Security,Critical,2024-06-16,2024-10-10,Fixed,4756
+252,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,19,5.31,17,Syntax,Low,2021-10-04,2021-07-04,Fixed,1514
+253,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,243,9.85,24,Syntax,Critical,2022-11-22,2024-06-17,Verified,4761
+254,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,28,6.08,44,Logic,High,2021-05-21,2024-12-04,Pending,3454
+255,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,94,8.35,38,Syntax,High,2023-03-05,2022-03-13,Pending,4973
+256,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,193,1.05,13,Security,High,2021-06-29,2023-07-25,Pending,4304
+257,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,124,2.27,36,Logic,Low,2024-06-27,2020-11-01,Verified,2605
+258,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,248,7.52,46,Compilation,Medium,2020-11-20,2021-10-25,Fixed,1087
+259,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,22,8.82,23,Compilation,Critical,2022-03-25,2023-03-28,In-Progress,3895
+260,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,122,6.5,28,Security,High,2023-02-23,2020-06-21,Fixed,1564
+261,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,165,6.89,17,Logic,Low,2021-07-18,2023-07-07,Verified,3680
+262,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,76,6.91,30,Performance,Medium,2020-01-23,2022-08-16,Verified,4212
+263,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,206,8.82,50,Compilation,Medium,2023-07-12,2021-11-12,Verified,1784
+264,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,78,7.04,19,Security,High,2023-09-25,2024-03-07,In-Progress,4419
+265,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,267,7.21,36,Syntax,Low,2023-03-10,2022-02-01,Fixed,4672
+266,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,13,4.04,41,Security,Critical,2020-11-06,2024-10-19,In-Progress,3945
+267,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,205,9.37,10,Logic,High,2024-02-25,2022-10-31,In-Progress,1742
+268,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,147,1.04,6,Security,Critical,2022-08-20,2020-01-22,Verified,1526
+269,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,183,9.19,23,Security,Critical,2022-02-18,2024-08-17,Pending,4717
+270,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,26,5.75,16,Security,Low,2023-09-28,2024-09-03,Fixed,1916
+271,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,171,8.41,46,Security,High,2024-02-08,2023-10-28,Verified,4225
+272,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,211,6.28,37,Performance,Medium,2023-09-27,2024-05-26,Pending,4711
+273,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,131,2.46,42,Performance,Critical,2020-04-24,2023-09-23,Fixed,1268
+274,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,116,4.08,10,Runtime,Low,2022-09-18,2023-05-01,Pending,3789
+275,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,42,3.76,42,Logic,Medium,2020-06-07,2021-08-05,Verified,4201
+276,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,281,2.65,45,Logic,Critical,2023-10-16,2023-07-08,In-Progress,1827
+277,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,244,7.49,47,Compilation,Medium,2023-06-11,2023-10-30,Pending,2948
+278,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,219,5.06,5,Performance,Medium,2023-03-02,2024-11-15,Pending,4122
+279,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,98,5.02,11,Compilation,Low,2023-05-08,2023-05-25,Verified,3031
+280,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,57,8.39,19,Logic,Medium,2022-01-28,2020-07-12,In-Progress,2011
+281,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,120,9.44,50,Runtime,Low,2022-01-03,2024-01-12,Fixed,4332
+282,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,38,8.06,50,Logic,Critical,2020-04-06,2021-11-19,Verified,4044
+283,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,76,4.38,20,Syntax,High,2022-12-22,2024-12-10,In-Progress,2363
+284,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,49,8.89,17,Runtime,High,2022-03-24,2024-06-07,Fixed,3072
+285,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,222,6.93,22,Syntax,Critical,2022-03-08,2020-01-14,Pending,2740
+286,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,292,3.7,41,Logic,High,2022-02-21,2020-02-03,Pending,1902
+287,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,263,1.74,39,Performance,Critical,2021-07-26,2024-06-28,In-Progress,1707
+288,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,258,9.77,50,Runtime,Low,2023-12-08,2021-07-26,Fixed,4045
+289,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,111,6.14,10,Compilation,Low,2022-05-08,2024-11-16,Verified,1829
+290,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,119,1.9,40,Compilation,Low,2022-11-11,2024-09-25,Verified,3702
+291,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,120,7.88,20,Runtime,Critical,2021-01-31,2024-08-02,Pending,1043
+292,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,71,7.2,36,Compilation,Critical,2024-12-21,2021-10-29,Verified,2441
+293,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,83,9.65,15,Compilation,Low,2021-09-05,2023-01-28,In-Progress,4838
+294,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,150,6.3,45,Security,Critical,2024-06-09,2024-12-05,Verified,1181
+295,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,233,9.6,13,Performance,Low,2022-05-29,2020-06-06,Pending,1955
+296,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,248,6.26,12,Compilation,Medium,2022-02-17,2022-05-05,In-Progress,4656
+297,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,201,8.7,36,Runtime,Medium,2020-04-04,2023-12-09,Fixed,1834
+298,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,255,3.15,45,Logic,High,2022-04-25,2021-12-18,In-Progress,3248
+299,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,23,1.04,8,Performance,Medium,2023-03-24,2020-03-28,Verified,4442
+300,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,133,3.37,21,Security,Critical,2021-08-08,2023-04-01,Pending,2470
+301,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,23,7.74,5,Security,Low,2023-07-29,2023-07-06,In-Progress,3830
+302,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,262,5.96,50,Syntax,High,2023-05-12,2023-02-20,Verified,1136
+303,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,215,6.13,15,Performance,Critical,2023-07-18,2021-06-30,In-Progress,4820
+304,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,157,4.34,34,Compilation,Low,2024-06-24,2022-10-16,In-Progress,2545
+305,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,14,7.0,12,Runtime,Low,2020-07-19,2021-07-27,Fixed,2874
+306,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,206,8.73,13,Security,High,2021-05-01,2020-02-27,Verified,4183
+307,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,205,2.61,26,Runtime,High,2021-04-09,2021-05-16,Verified,1992
+308,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,277,3.45,48,Compilation,Low,2020-12-31,2022-11-08,In-Progress,3053
+309,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,252,5.11,12,Performance,Medium,2020-10-03,2024-05-01,Verified,2967
+310,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,160,5.23,15,Syntax,Medium,2022-05-04,2024-09-02,Pending,3938
+311,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,274,5.68,25,Syntax,High,2022-12-05,2023-11-17,Verified,1569
+312,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,215,9.82,34,Compilation,Medium,2022-05-12,2023-03-23,Verified,4833
+313,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,137,8.72,18,Compilation,Critical,2021-03-10,2020-03-02,Pending,2268
+314,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,236,9.6,33,Security,Medium,2020-07-10,2023-02-04,Verified,2891
+315,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,23,3.78,11,Runtime,Low,2021-06-18,2021-11-02,Fixed,4146
+316,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,123,4.32,40,Performance,Low,2021-05-31,2022-01-25,Pending,1874
+317,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,238,7.67,39,Logic,Medium,2024-10-17,2024-09-11,Pending,1581
+318,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,237,9.8,36,Performance,Critical,2023-11-04,2021-08-28,Fixed,2287
+319,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,197,4.96,30,Performance,High,2024-05-20,2021-09-26,Fixed,4354
+320,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,204,9.84,15,Syntax,Critical,2020-11-07,2023-11-22,Fixed,2227
+321,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,272,3.89,15,Compilation,Medium,2021-09-03,2022-08-16,Verified,1938
+322,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,233,1.82,24,Performance,Critical,2022-04-07,2023-09-01,Verified,2018
+323,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,19,6.74,25,Compilation,Critical,2023-05-21,2023-04-16,In-Progress,1630
+324,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,18,9.74,5,Performance,Medium,2024-03-25,2023-04-29,Pending,2038
+325,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,249,3.89,26,Security,Medium,2023-06-27,2023-08-17,In-Progress,4553
+326,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,286,9.7,46,Security,Low,2021-05-16,2024-08-09,In-Progress,1249
+327,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,26,3.57,33,Logic,High,2023-02-17,2021-09-09,Pending,3877
+328,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,291,1.57,48,Performance,High,2022-10-31,2021-02-19,Pending,1826
+329,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,220,3.69,50,Compilation,Critical,2021-10-21,2021-01-16,Verified,1312
+330,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,197,7.66,34,Runtime,High,2020-02-05,2021-11-19,Fixed,2355
+331,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,97,1.27,23,Security,Critical,2024-06-19,2022-11-13,Pending,4524
+332,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,214,3.62,10,Compilation,Low,2022-02-04,2023-10-06,Pending,2690
+333,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,121,5.3,38,Security,Medium,2022-04-17,2020-12-19,Fixed,4895
+334,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,81,2.27,11,Performance,Low,2022-08-23,2020-08-21,Verified,2938
+335,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,145,1.28,45,Logic,Low,2023-08-21,2020-11-18,Verified,1208
+336,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,120,7.14,5,Logic,Medium,2022-05-29,2020-08-28,Verified,2336
+337,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,125,4.47,11,Performance,Medium,2024-06-23,2020-10-25,In-Progress,3130
+338,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,174,4.75,21,Security,Critical,2020-01-21,2024-01-20,Verified,1402
+339,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,270,7.61,19,Runtime,Medium,2024-07-20,2022-03-12,Pending,3741
+340,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,203,7.67,49,Runtime,Medium,2020-06-19,2022-01-04,Pending,3960
+341,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,196,1.98,39,Syntax,Low,2024-12-31,2022-06-18,Fixed,2530
+342,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,32,9.38,40,Syntax,Medium,2020-02-27,2023-01-03,In-Progress,3390
+343,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,146,1.96,7,Logic,High,2021-10-30,2021-01-29,Fixed,1936
+344,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,235,4.86,14,Compilation,Critical,2021-01-17,2022-09-25,Pending,4079
+345,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,130,5.53,18,Compilation,Medium,2024-07-16,2024-06-19,In-Progress,1489
+346,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,66,4.1,15,Syntax,High,2023-10-22,2021-06-05,Verified,2037
+347,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,68,8.68,10,Syntax,Medium,2023-07-15,2024-04-01,Fixed,2233
+348,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,115,9.1,36,Logic,Medium,2024-02-28,2024-03-21,Verified,4322
+349,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,152,7.99,18,Compilation,Critical,2024-06-08,2020-01-20,Fixed,2785
+350,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,144,2.24,42,Performance,Critical,2023-04-09,2020-05-02,In-Progress,3759
+351,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,227,1.55,42,Logic,Critical,2021-01-12,2021-04-20,Pending,2161
+352,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,18,7.5,50,Compilation,High,2024-09-18,2024-12-10,In-Progress,2702
+353,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,140,3.54,10,Compilation,Low,2023-07-27,2021-03-08,Pending,2228
+354,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,102,2.21,18,Runtime,Low,2022-11-30,2024-04-25,Fixed,2201
+355,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,203,2.42,26,Logic,Medium,2021-09-09,2022-08-26,Pending,4441
+356,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,200,8.82,44,Security,Low,2024-04-05,2023-04-26,In-Progress,1314
+357,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,269,1.67,24,Syntax,High,2024-07-03,2024-11-08,Fixed,1319
+358,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,99,2.15,48,Compilation,High,2021-07-19,2023-02-03,Pending,3465
+359,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,214,9.12,29,Performance,Critical,2023-06-28,2021-06-30,Pending,2669
+360,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,116,3.74,5,Performance,Critical,2022-11-14,2020-08-29,In-Progress,4457
+361,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,132,1.56,50,Runtime,High,2022-12-27,2024-03-20,Fixed,3073
+362,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,180,3.22,18,Runtime,Medium,2023-11-25,2024-07-12,Verified,2029
+363,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,217,5.64,44,Logic,Critical,2024-08-26,2022-10-18,Fixed,1151
+364,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,202,5.22,10,Performance,Low,2023-07-25,2022-05-20,Fixed,1154
+365,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,219,4.07,20,Logic,Low,2024-10-16,2021-08-30,Pending,2724
+366,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,76,1.69,7,Security,Low,2023-06-24,2024-07-31,Pending,4142
+367,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,153,5.17,8,Performance,Medium,2023-04-12,2023-09-29,Pending,1498
+368,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,278,8.62,37,Compilation,Low,2020-06-22,2021-07-25,Verified,1851
+369,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,119,2.81,30,Runtime,Critical,2020-08-27,2020-02-02,Pending,1832
+370,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,271,4.28,46,Compilation,Critical,2020-06-28,2020-11-10,Verified,3845
+371,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,230,1.06,46,Logic,Low,2020-11-19,2022-10-28,In-Progress,2161
+372,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,254,4.79,49,Syntax,Medium,2021-07-27,2023-10-24,Pending,1899
+373,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,56,5.93,41,Syntax,Medium,2020-06-07,2021-01-12,Pending,1854
+374,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,251,4.44,12,Security,Critical,2020-02-14,2020-08-21,Pending,2829
+375,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,205,1.44,38,Compilation,High,2024-04-10,2022-07-31,Fixed,3591
+376,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,141,8.06,26,Logic,Medium,2022-04-09,2022-05-18,Pending,1836
+377,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,278,4.51,19,Security,Medium,2020-10-15,2023-07-16,Pending,3978
+378,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,232,6.5,5,Logic,Critical,2023-11-04,2022-05-25,Verified,2893
+379,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,161,5.65,47,Security,Low,2024-12-14,2024-03-01,Verified,4091
+380,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,104,8.87,5,Runtime,Critical,2020-08-16,2024-03-09,Verified,1883
+381,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,60,9.25,26,Security,Low,2021-01-25,2023-03-18,Verified,2709
+382,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,286,3.71,21,Syntax,High,2024-04-07,2020-02-22,Verified,3250
+383,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,222,6.51,18,Compilation,Medium,2021-08-25,2024-02-07,Fixed,2076
+384,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,208,1.8,50,Runtime,Medium,2024-11-24,2022-11-19,Pending,2262
+385,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,130,1.01,23,Logic,High,2023-05-02,2021-12-16,Fixed,3293
+386,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,249,5.85,13,Compilation,Medium,2020-04-27,2020-10-18,In-Progress,3163
+387,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,202,2.23,27,Logic,Critical,2021-04-12,2020-05-03,In-Progress,3017
+388,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,166,5.52,47,Performance,Critical,2022-04-22,2020-01-19,Fixed,1579
+389,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,166,5.08,18,Compilation,High,2023-10-30,2020-01-15,Verified,3954
+390,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,283,4.75,25,Performance,High,2021-03-22,2021-09-20,Pending,1524
+391,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,227,5.07,50,Syntax,Critical,2023-06-20,2020-07-29,Pending,3082
+392,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,109,4.88,27,Syntax,Low,2023-10-22,2022-12-13,Pending,1093
+393,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,67,4.25,28,Security,Medium,2023-10-26,2023-10-12,Fixed,3589
+394,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,289,7.01,10,Logic,Medium,2023-09-28,2022-07-17,Verified,2414
+395,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,195,1.04,40,Syntax,High,2022-09-19,2024-03-19,Fixed,4217
+396,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,103,1.06,6,Compilation,Medium,2022-07-04,2023-12-01,Pending,4763
+397,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,14,5.61,6,Performance,Critical,2023-05-21,2024-08-18,Pending,3757
+398,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,51,1.29,27,Compilation,Medium,2022-02-20,2024-06-24,Verified,3257
+399,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,289,1.79,21,Syntax,Critical,2020-05-29,2020-10-29,Verified,3462
+400,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,23,8.3,9,Logic,High,2024-03-29,2024-06-04,Verified,1196
+401,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,45,3.74,6,Security,Critical,2023-09-24,2020-04-18,Fixed,4509
+402,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,262,4.32,29,Logic,Medium,2024-01-17,2020-02-10,Verified,4272
+403,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,209,8.87,41,Compilation,Medium,2022-10-10,2020-06-24,In-Progress,3363
+404,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,156,2.85,50,Security,Critical,2024-01-14,2022-09-11,In-Progress,3448
+405,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,262,8.32,25,Syntax,Low,2022-01-26,2024-01-12,Pending,2482
+406,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,118,1.96,30,Security,Medium,2020-05-12,2024-12-23,Fixed,1856
+407,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,25,8.89,17,Security,Low,2023-09-27,2020-07-11,Pending,2268
+408,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,118,1.65,37,Runtime,Medium,2021-03-24,2022-03-08,Verified,3428
+409,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,126,3.36,40,Compilation,Medium,2021-11-12,2023-09-02,In-Progress,1037
+410,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,241,3.57,29,Runtime,Critical,2022-01-02,2020-04-08,Pending,3003
+411,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,30,9.42,13,Performance,Low,2022-06-08,2020-01-01,In-Progress,3772
+412,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,253,1.12,13,Performance,Medium,2021-03-31,2021-06-20,In-Progress,1786
+413,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,111,2.33,10,Logic,Medium,2020-07-09,2022-09-15,Pending,4009
+414,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,113,9.87,8,Syntax,High,2023-10-05,2024-08-29,Fixed,4875
+415,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,213,9.18,24,Security,Low,2020-12-17,2021-11-10,In-Progress,2561
+416,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,295,4.81,22,Performance,High,2020-12-04,2021-10-06,Pending,4478
+417,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,112,3.85,38,Compilation,Medium,2024-05-31,2020-12-24,Verified,1683
+418,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,192,9.01,47,Compilation,Critical,2023-11-26,2024-12-28,In-Progress,1454
+419,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,97,6.1,37,Runtime,Medium,2023-08-05,2020-06-15,Fixed,1503
+420,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,287,4.88,11,Compilation,Medium,2023-06-30,2024-07-22,Verified,1240
+421,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,89,7.43,39,Performance,Critical,2021-07-25,2020-01-25,Pending,3538
+422,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,148,2.93,29,Compilation,Medium,2023-12-17,2022-11-22,Fixed,4582
+423,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,273,9.11,8,Logic,Critical,2024-07-29,2022-06-03,Fixed,2836
+424,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,256,7.93,7,Logic,High,2023-09-21,2021-01-16,Pending,4474
+425,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,82,8.18,31,Security,Low,2020-09-23,2021-11-07,Verified,4224
+426,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,134,1.08,21,Security,Low,2023-10-27,2024-03-21,Verified,1356
+427,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,106,9.32,24,Runtime,High,2021-06-22,2020-01-09,Verified,1160
+428,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,254,7.45,22,Logic,Medium,2021-01-13,2022-03-12,Fixed,3672
+429,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,240,7.98,32,Security,Medium,2024-11-05,2021-01-17,In-Progress,1566
+430,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,30,1.68,17,Runtime,Medium,2020-02-08,2023-10-11,Pending,4184
+431,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,208,2.07,49,Compilation,High,2021-06-20,2024-12-22,Fixed,1868
+432,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,250,7.1,28,Performance,Medium,2023-01-07,2021-04-01,Fixed,4765
+433,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,77,6.34,21,Runtime,Medium,2023-02-19,2020-05-09,Verified,1029
+434,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,221,1.86,42,Security,Medium,2021-08-25,2023-05-05,Pending,4019
+435,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,282,6.72,8,Logic,Low,2023-01-26,2022-02-24,Fixed,1480
+436,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,63,1.36,22,Syntax,Medium,2021-05-23,2021-12-08,Pending,1099
+437,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,215,2.96,10,Performance,Low,2020-12-20,2023-05-13,Verified,2145
+438,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,117,4.08,39,Performance,Critical,2022-10-28,2020-11-20,In-Progress,2994
+439,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,142,7.78,19,Performance,Low,2022-01-22,2024-04-11,In-Progress,2101
+440,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,24,8.03,48,Syntax,High,2021-04-22,2023-11-08,Fixed,1484
+441,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,218,1.93,40,Syntax,High,2020-05-07,2024-10-24,Pending,1937
+442,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,188,4.3,32,Performance,High,2023-01-02,2023-02-19,Fixed,1955
+443,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,261,9.39,49,Logic,High,2024-07-28,2021-07-04,In-Progress,4469
+444,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,218,6.37,31,Security,Low,2023-03-28,2023-01-01,In-Progress,4827
+445,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,73,4.24,40,Syntax,Critical,2020-08-07,2022-07-21,Pending,4673
+446,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,188,9.46,8,Runtime,Critical,2022-03-10,2020-04-10,Fixed,4341
+447,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,291,7.81,17,Compilation,Critical,2020-10-19,2021-01-22,Verified,3795
+448,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,157,1.54,31,Security,Low,2020-08-14,2021-12-01,Fixed,2007
+449,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,281,6.08,11,Performance,Critical,2024-08-16,2020-10-27,Fixed,2148
+450,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,141,8.62,18,Syntax,High,2022-09-09,2020-09-19,Pending,2472
+451,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,233,8.44,14,Logic,Medium,2020-12-08,2021-09-15,Pending,4210
+452,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,176,8.63,16,Logic,High,2024-10-06,2023-02-12,In-Progress,4603
+453,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,259,3.33,12,Security,Medium,2022-05-03,2021-12-31,In-Progress,3459
+454,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,109,4.91,17,Security,Critical,2024-01-28,2023-05-30,Pending,1405
+455,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,154,3.44,28,Logic,Critical,2022-01-12,2021-06-17,Pending,2996
+456,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,257,7.95,16,Performance,Critical,2023-10-18,2020-10-21,In-Progress,2698
+457,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,21,1.23,13,Runtime,Medium,2020-07-06,2020-11-26,In-Progress,3969
+458,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,238,5.89,38,Security,High,2023-05-04,2022-07-22,Fixed,1007
+459,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,40,1.13,35,Logic,High,2020-12-08,2023-12-02,Pending,4292
+460,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,181,5.61,25,Compilation,Low,2022-06-30,2023-05-26,In-Progress,1048
+461,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,221,5.58,11,Compilation,Low,2020-02-13,2021-04-26,In-Progress,2994
+462,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,184,2.95,33,Syntax,High,2023-06-26,2021-02-08,Verified,2144
+463,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,40,3.0,23,Syntax,Medium,2022-06-08,2024-04-02,Verified,1957
+464,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,66,7.02,28,Syntax,Low,2020-11-23,2021-09-20,Verified,1076
+465,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,161,6.73,36,Syntax,Low,2020-09-14,2024-08-06,Pending,4650
+466,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,81,2.29,21,Performance,High,2023-12-06,2023-05-03,Verified,2047
+467,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,278,1.13,19,Runtime,Critical,2022-01-22,2023-08-27,Verified,2448
+468,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,147,9.4,37,Security,Medium,2022-01-23,2022-12-24,Verified,4286
+469,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,229,8.81,44,Syntax,High,2023-01-22,2022-04-16,Pending,4891
+470,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,111,6.6,40,Runtime,High,2020-04-19,2022-01-08,Verified,1569
+471,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,51,6.72,6,Logic,Low,2021-06-21,2022-09-07,Verified,3225
+472,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,112,1.7,46,Performance,Critical,2022-04-27,2023-08-08,In-Progress,1762
+473,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,185,1.51,42,Compilation,High,2020-03-12,2020-01-08,Fixed,1061
+474,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,189,7.93,12,Syntax,Medium,2020-09-26,2024-07-19,Pending,4328
+475,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,23,4.1,39,Compilation,Low,2023-08-14,2024-06-24,Pending,4361
+476,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,25,4.0,50,Runtime,Medium,2023-01-11,2022-06-16,Fixed,2732
+477,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,108,8.07,47,Logic,Low,2023-10-30,2024-11-13,In-Progress,3215
+478,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,31,3.18,39,Logic,Critical,2022-09-29,2021-10-20,Fixed,1816
+479,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,75,3.23,19,Security,High,2021-12-09,2022-01-28,Pending,3697
+480,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,22,4.18,39,Performance,High,2021-11-03,2024-11-14,Pending,3642
+481,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,187,2.97,12,Syntax,Low,2024-02-13,2024-12-11,Verified,2488
+482,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,59,5.87,16,Logic,Medium,2022-10-03,2022-12-30,In-Progress,3419
+483,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,46,8.38,16,Compilation,High,2022-10-20,2024-08-01,Pending,2947
+484,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,180,7.44,13,Performance,High,2021-02-25,2021-02-07,Verified,3882
+485,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,184,4.96,48,Runtime,Critical,2023-08-16,2020-06-05,In-Progress,4913
+486,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,100,3.03,10,Performance,Low,2023-01-28,2021-07-08,In-Progress,4721
+487,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,209,4.85,39,Syntax,High,2024-05-17,2023-09-14,Fixed,1462
+488,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,198,3.19,6,Syntax,Medium,2024-07-29,2020-11-28,Verified,4444
+489,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,123,3.12,28,Syntax,High,2024-07-17,2021-12-20,Verified,1239
+490,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,140,8.67,18,Compilation,High,2022-01-21,2021-11-01,Pending,1154
+491,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,187,2.05,8,Logic,Medium,2020-10-10,2020-05-17,In-Progress,4145
+492,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,293,9.52,18,Compilation,High,2021-10-19,2021-02-22,Fixed,2405
+493,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,73,8.93,42,Performance,Medium,2024-05-07,2022-12-20,Pending,1506
+494,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,264,6.67,42,Security,Critical,2023-05-05,2024-10-27,Pending,1728
+495,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,74,5.49,38,Performance,Low,2024-06-05,2023-04-01,In-Progress,2469
+496,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,197,7.6,18,Security,Critical,2024-07-31,2020-01-13,Pending,3230
+497,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,152,5.3,21,Runtime,Low,2024-02-26,2020-02-24,Verified,2546
+498,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,278,1.54,39,Performance,Low,2021-07-25,2022-11-14,In-Progress,4618
+499,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,85,7.99,30,Logic,Critical,2023-11-05,2021-07-06,Fixed,2252
+500,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,161,5.39,6,Runtime,Low,2023-10-06,2024-02-15,Verified,1229
+501,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,183,6.02,12,Performance,Medium,2020-09-06,2021-01-14,Pending,4877
+502,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,42,5.99,17,Syntax,Low,2024-07-15,2021-04-02,In-Progress,4780
+503,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,218,3.23,6,Security,Medium,2021-01-27,2023-03-15,Pending,2699
+504,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,237,8.02,33,Security,Critical,2021-09-27,2024-05-30,Fixed,4406
+505,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,201,5.48,41,Syntax,Critical,2022-12-16,2021-08-06,Fixed,2719
+506,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,267,1.95,25,Runtime,Critical,2023-12-14,2021-11-16,Pending,4921
+507,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,150,9.22,34,Security,Low,2020-11-26,2024-04-30,Fixed,3835
+508,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,79,2.41,50,Runtime,Medium,2020-10-04,2020-04-09,In-Progress,4038
+509,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,38,9.65,12,Compilation,High,2024-09-12,2022-07-15,In-Progress,3334
+510,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,60,9.43,27,Logic,Critical,2023-05-13,2020-04-10,In-Progress,4462
+511,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,68,7.38,32,Syntax,Medium,2020-09-05,2020-03-19,Pending,3876
+512,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,189,7.1,23,Logic,Medium,2024-11-15,2022-04-07,In-Progress,4680
+513,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,268,2.76,35,Performance,Low,2024-11-10,2024-09-05,Fixed,1274
+514,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,153,8.13,21,Compilation,Critical,2024-08-29,2023-03-03,Fixed,2020
+515,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,89,3.96,49,Runtime,Critical,2021-05-12,2023-03-27,Verified,1442
+516,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,298,6.22,43,Security,Medium,2021-03-10,2024-08-09,In-Progress,2734
+517,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,198,6.8,45,Runtime,Medium,2020-06-19,2020-12-02,Verified,3777
+518,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,258,7.02,11,Logic,High,2023-10-13,2022-08-30,Fixed,1363
+519,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,126,9.41,18,Compilation,High,2024-02-12,2024-10-22,Verified,1196
+520,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,80,5.86,40,Performance,Critical,2024-09-18,2024-06-07,Verified,4916
+521,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,202,9.58,25,Runtime,Medium,2024-02-18,2020-12-02,In-Progress,3037
+522,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,63,9.82,43,Performance,Low,2024-03-17,2021-01-04,Pending,2651
+523,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,164,4.45,28,Syntax,Medium,2020-07-04,2022-09-04,In-Progress,4312
+524,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,144,9.98,7,Logic,Critical,2024-12-22,2020-12-15,Verified,3285
+525,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,187,4.75,39,Runtime,Critical,2023-07-03,2021-12-20,Verified,1546
+526,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,257,8.17,22,Syntax,Medium,2023-12-18,2022-01-29,Verified,2229
+527,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,283,3.34,33,Logic,Critical,2021-10-10,2021-03-22,Verified,1054
+528,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,15,8.05,38,Logic,Critical,2023-08-14,2023-02-14,Fixed,3220
+529,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,264,3.67,15,Runtime,Critical,2024-01-31,2022-11-20,In-Progress,1550
+530,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,172,6.47,31,Logic,High,2023-06-21,2024-11-05,Pending,2249
+531,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,254,6.92,45,Runtime,Low,2024-04-26,2024-05-12,Verified,3935
+532,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,49,3.62,32,Compilation,Medium,2022-04-29,2024-02-05,Verified,4495
+533,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,26,8.07,50,Syntax,Medium,2022-01-07,2023-06-04,In-Progress,4201
+534,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,66,3.08,27,Performance,Low,2023-10-14,2021-09-08,In-Progress,2539
+535,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,225,7.81,25,Runtime,Critical,2023-06-22,2024-03-09,Pending,4272
+536,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,168,2.3,48,Security,Low,2021-12-11,2022-03-09,Pending,3703
+537,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,240,7.56,16,Syntax,Critical,2022-06-25,2020-04-27,Pending,3289
+538,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,268,8.46,40,Performance,Medium,2020-06-26,2020-08-01,Fixed,3259
+539,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,193,3.24,42,Security,Low,2023-06-22,2022-08-07,Verified,4805
+540,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,216,7.21,48,Security,Critical,2021-10-21,2023-11-11,Pending,2167
+541,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,88,8.32,28,Performance,Critical,2024-04-17,2024-03-24,Verified,3751
+542,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,179,3.33,30,Performance,High,2023-12-23,2021-11-10,Verified,2661
+543,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,276,7.44,23,Runtime,High,2023-11-25,2020-07-27,Pending,2379
+544,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,15,9.92,48,Runtime,Critical,2023-05-08,2024-10-21,In-Progress,4911
+545,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,138,4.62,37,Logic,Low,2023-12-27,2022-11-22,Verified,4503
+546,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,34,4.86,13,Security,High,2024-07-17,2020-02-24,Pending,2223
+547,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,99,8.55,45,Logic,Low,2024-06-20,2024-07-28,Verified,4241
+548,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,200,4.84,20,Compilation,Medium,2021-09-11,2023-04-14,Pending,2617
+549,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,218,3.1,37,Logic,Critical,2020-05-31,2021-08-02,Fixed,2060
+550,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,204,1.05,39,Runtime,Critical,2021-09-19,2023-01-02,Verified,2199
+551,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,144,8.54,5,Logic,Critical,2024-10-08,2023-04-01,Fixed,1896
+552,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,172,8.46,15,Logic,Medium,2023-05-17,2021-08-01,Pending,2078
+553,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,217,2.35,31,Performance,Critical,2023-01-12,2020-06-30,Verified,1354
+554,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,66,2.17,47,Security,Low,2021-12-08,2024-07-12,Fixed,1033
+555,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,146,1.61,25,Logic,High,2022-11-09,2022-05-06,In-Progress,3626
+556,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,231,7.31,39,Logic,High,2020-01-03,2024-01-19,Verified,2913
+557,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,125,5.6,11,Compilation,High,2024-02-28,2020-08-05,Pending,1869
+558,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,281,3.82,49,Syntax,Critical,2023-06-28,2021-08-12,Fixed,1901
+559,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,193,1.57,17,Runtime,Medium,2024-05-26,2021-12-29,Fixed,1874
+560,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,15,8.06,27,Logic,Medium,2024-02-21,2021-11-07,Verified,2204
+561,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,81,2.81,44,Syntax,High,2023-06-10,2024-11-18,Verified,2410
+562,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,247,4.32,23,Runtime,Critical,2022-11-28,2023-09-28,Pending,2191
+563,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,135,9.61,41,Performance,Medium,2020-04-09,2021-03-27,In-Progress,1919
+564,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,246,4.65,17,Compilation,High,2021-07-03,2021-02-25,Pending,3541
+565,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,81,3.11,25,Syntax,Medium,2020-11-04,2022-04-01,In-Progress,3577
+566,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,245,2.55,39,Performance,High,2020-03-12,2024-02-08,Verified,1106
+567,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,207,3.53,21,Logic,Low,2024-01-29,2023-04-02,Verified,4092
+568,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,299,3.81,22,Security,Critical,2023-12-24,2023-02-21,In-Progress,4822
+569,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,198,2.42,33,Syntax,Low,2024-10-16,2024-12-04,Verified,1507
+570,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,224,3.48,44,Logic,Medium,2023-06-26,2023-04-26,Pending,3440
+571,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,128,1.66,16,Security,Critical,2022-02-27,2023-04-09,Verified,1406
+572,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,35,9.95,11,Compilation,Critical,2022-06-07,2024-12-09,In-Progress,1662
+573,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,186,5.24,41,Runtime,Low,2021-02-06,2021-10-31,Fixed,4128
+574,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,27,5.99,8,Runtime,Medium,2023-08-05,2020-04-14,Verified,2678
+575,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,182,5.18,37,Security,Critical,2020-11-24,2020-04-24,Fixed,2706
+576,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,236,3.3,39,Syntax,High,2020-12-15,2022-11-27,In-Progress,2503
+577,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,224,5.41,29,Performance,High,2020-11-24,2022-05-22,Verified,3181
+578,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,277,5.61,43,Compilation,High,2024-12-10,2022-04-18,Fixed,4897
+579,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,260,6.81,30,Security,Low,2024-04-22,2021-09-10,Pending,1882
+580,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,73,6.59,45,Syntax,High,2020-09-16,2022-06-27,Verified,4861
+581,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,136,6.65,26,Syntax,Low,2020-05-28,2023-01-06,Pending,3788
+582,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,153,1.92,15,Logic,Medium,2020-05-22,2022-01-04,In-Progress,2901
+583,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,69,9.39,48,Security,Critical,2022-02-22,2024-03-14,Pending,4408
+584,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,132,3.25,48,Runtime,Low,2020-05-27,2020-08-09,Verified,2410
+585,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,56,2.18,50,Performance,High,2020-05-28,2022-10-02,Pending,1667
+586,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,118,2.94,49,Logic,Critical,2023-03-28,2022-11-30,Fixed,2680
+587,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,234,8.7,5,Compilation,Medium,2021-01-10,2023-02-24,Fixed,4588
+588,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,222,3.53,30,Syntax,Low,2024-07-29,2021-06-23,Pending,2953
+589,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,300,7.23,33,Compilation,Low,2024-05-09,2023-11-15,Pending,4684
+590,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,115,6.08,41,Runtime,Low,2023-04-21,2023-05-17,Fixed,4111
+591,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,157,4.62,15,Compilation,Medium,2023-12-05,2024-03-12,Fixed,4960
+592,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,38,6.89,37,Logic,Critical,2021-07-14,2020-02-13,Verified,3375
+593,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,228,1.15,45,Performance,Critical,2022-06-10,2023-07-20,Pending,2398
+594,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,105,9.65,24,Security,Medium,2021-06-04,2020-01-13,Fixed,4347
+595,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,254,1.09,43,Runtime,High,2023-11-20,2024-06-11,In-Progress,1964
+596,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,150,4.25,7,Logic,High,2024-09-13,2024-09-22,In-Progress,4957
+597,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,247,6.98,11,Logic,High,2020-04-30,2022-04-06,Verified,4488
+598,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,177,5.05,11,Syntax,High,2020-02-11,2023-05-28,Fixed,1144
+599,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,20,8.4,39,Security,Low,2021-01-22,2023-10-12,Verified,2459
+600,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,178,5.25,34,Runtime,High,2021-01-26,2021-10-23,Pending,3136
+601,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,253,8.98,16,Syntax,Medium,2021-03-06,2024-07-13,Verified,1643
+602,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,143,7.67,22,Security,Critical,2023-09-04,2024-12-06,Verified,2046
+603,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,152,4.01,29,Compilation,High,2022-04-27,2021-09-01,Pending,1514
+604,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,148,6.52,16,Runtime,Medium,2020-06-10,2022-04-28,In-Progress,1016
+605,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,259,8.74,13,Logic,High,2022-08-02,2023-07-26,In-Progress,4409
+606,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,28,8.51,37,Syntax,High,2023-03-22,2022-12-14,Verified,4207
+607,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,69,3.08,13,Syntax,Medium,2022-12-31,2020-06-19,Pending,4171
+608,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,269,1.95,29,Syntax,Medium,2023-05-06,2021-12-14,Verified,1580
+609,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,115,8.0,44,Compilation,Critical,2023-12-24,2020-04-05,Fixed,4004
+610,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,83,1.94,27,Logic,High,2022-03-07,2022-05-13,Fixed,4493
+611,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,289,2.67,30,Logic,High,2021-07-28,2023-06-26,In-Progress,2954
+612,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,14,4.31,36,Runtime,High,2022-06-10,2024-12-21,Pending,2685
+613,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,42,7.54,38,Syntax,Low,2020-06-15,2022-02-18,Verified,3966
+614,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,77,8.93,21,Syntax,Medium,2020-04-14,2023-04-28,Fixed,1160
+615,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,219,3.93,36,Performance,Medium,2021-10-07,2024-05-28,Pending,4962
+616,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,206,4.32,43,Logic,Medium,2022-06-14,2024-12-17,In-Progress,3202
+617,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,278,8.36,46,Runtime,Medium,2021-08-15,2024-12-01,Verified,1317
+618,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,122,6.94,15,Performance,Low,2024-06-20,2022-08-15,Fixed,4847
+619,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,296,4.09,19,Logic,High,2023-11-02,2020-03-09,Pending,3577
+620,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,250,6.51,17,Runtime,Critical,2022-03-07,2020-03-07,Fixed,2567
+621,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,269,1.86,32,Compilation,Low,2023-11-16,2021-12-13,Pending,4964
+622,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,261,6.46,20,Syntax,Critical,2021-06-19,2021-02-12,Verified,4654
+623,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,159,7.07,30,Compilation,Medium,2020-07-27,2022-01-25,Verified,3882
+624,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,276,7.36,44,Syntax,Low,2020-04-12,2023-06-04,Verified,2216
+625,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,193,9.06,45,Runtime,High,2021-11-17,2020-08-30,Verified,1201
+626,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,200,1.36,39,Security,Low,2021-01-16,2022-09-29,Fixed,1192
+627,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,23,7.44,37,Runtime,Medium,2021-02-27,2020-02-26,Fixed,4474
+628,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,150,5.34,33,Compilation,Critical,2022-05-27,2021-07-25,In-Progress,4309
+629,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,73,2.01,49,Security,Medium,2021-11-01,2023-05-01,Pending,4955
+630,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,291,2.15,9,Performance,High,2022-10-27,2020-11-23,Fixed,2935
+631,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,187,4.66,45,Runtime,Medium,2022-07-25,2020-01-29,In-Progress,1261
+632,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,165,5.53,7,Syntax,Medium,2020-08-06,2022-02-24,In-Progress,1875
+633,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,221,3.72,33,Security,Low,2024-12-06,2020-11-06,In-Progress,3676
+634,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,121,1.03,42,Security,Medium,2023-07-29,2021-05-09,Verified,4270
+635,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,142,5.95,29,Logic,High,2021-07-04,2023-05-03,Fixed,3488
+636,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,65,4.54,44,Logic,Low,2021-09-15,2020-01-04,Fixed,2727
+637,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,262,5.38,26,Syntax,High,2024-06-13,2023-11-30,Pending,1615
+638,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,59,1.14,39,Performance,Medium,2022-04-08,2020-03-11,Fixed,3878
+639,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,240,3.29,45,Logic,High,2020-12-09,2022-12-26,In-Progress,2239
+640,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,42,8.91,16,Security,Medium,2020-10-07,2022-04-03,Verified,2737
+641,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,290,7.77,16,Syntax,Low,2024-02-20,2023-09-30,Fixed,2644
+642,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,64,3.23,15,Security,High,2022-12-26,2022-11-29,Fixed,1422
+643,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,126,1.52,20,Compilation,Low,2023-03-24,2022-04-25,Pending,1143
+644,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,92,4.43,13,Logic,Low,2021-01-06,2023-04-09,Verified,4655
+645,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,201,4.12,14,Security,Medium,2024-12-14,2020-10-06,In-Progress,4838
+646,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,147,4.92,7,Runtime,Low,2021-05-11,2021-11-23,In-Progress,3651
+647,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,121,2.41,47,Performance,Medium,2024-10-08,2024-08-25,Fixed,2941
+648,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,146,2.8,9,Performance,High,2020-05-01,2024-05-04,Verified,2131
+649,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,212,7.76,33,Compilation,High,2021-09-03,2023-02-27,Fixed,1224
+650,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,202,2.93,25,Syntax,Low,2022-10-30,2021-12-27,In-Progress,1858
+651,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,181,9.59,39,Logic,Critical,2022-05-24,2022-04-15,Pending,3331
+652,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,106,2.04,22,Logic,Critical,2024-12-10,2020-02-10,Fixed,4985
+653,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,220,4.06,7,Syntax,Medium,2021-07-04,2023-08-09,Verified,2484
+654,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,108,7.72,37,Syntax,Critical,2022-11-21,2023-10-02,Fixed,4534
+655,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,62,1.84,5,Runtime,Critical,2023-01-16,2022-02-07,Pending,1645
+656,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,216,1.62,24,Runtime,High,2023-11-20,2021-01-20,In-Progress,3382
+657,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,191,9.74,14,Security,High,2021-05-14,2021-02-02,In-Progress,4027
+658,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,134,9.89,27,Performance,Medium,2023-08-04,2021-11-13,In-Progress,4605
+659,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,52,2.72,35,Syntax,Critical,2024-10-21,2024-11-12,Fixed,1274
+660,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,213,5.27,25,Runtime,Medium,2024-05-09,2020-11-03,Fixed,3734
+661,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,43,6.94,46,Logic,Low,2020-11-17,2022-07-09,Pending,4683
+662,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,275,3.15,27,Syntax,Critical,2020-04-28,2024-07-15,In-Progress,1561
+663,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,176,7.83,6,Logic,Medium,2022-05-17,2021-01-06,Pending,4355
+664,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,132,8.44,19,Runtime,Medium,2020-02-09,2021-02-10,Verified,4880
+665,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,220,1.55,10,Security,High,2021-11-27,2020-08-12,In-Progress,2315
+666,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,23,4.83,7,Compilation,Low,2024-03-26,2021-09-18,Pending,3236
+667,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,265,1.17,19,Syntax,Low,2022-01-22,2022-10-19,Verified,3487
+668,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,94,2.85,12,Logic,High,2020-03-05,2020-12-26,Verified,2317
+669,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,294,6.93,5,Compilation,Low,2020-10-30,2023-07-10,Fixed,2548
+670,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,211,3.9,35,Security,Low,2024-03-28,2021-01-10,Verified,1580
+671,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,13,4.18,46,Security,Medium,2024-06-28,2022-10-12,Pending,2912
+672,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,33,8.6,47,Logic,Critical,2020-07-29,2023-05-20,Verified,1433
+673,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,172,5.14,14,Security,Critical,2020-06-13,2024-08-15,Verified,1442
+674,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,58,1.15,19,Compilation,Low,2023-04-12,2024-11-28,Pending,2103
+675,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,247,8.27,50,Compilation,Low,2021-12-08,2020-12-20,In-Progress,4068
+676,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,199,5.9,5,Compilation,High,2022-05-16,2021-12-12,In-Progress,4100
+677,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,13,2.37,41,Security,High,2022-09-21,2023-04-21,Verified,3484
+678,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,137,1.62,24,Logic,Critical,2023-10-12,2021-08-11,Verified,1512
+679,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,184,7.61,27,Performance,Medium,2023-09-06,2021-10-29,Pending,2724
+680,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,55,5.08,44,Compilation,Low,2023-05-09,2024-01-03,In-Progress,1446
+681,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,67,2.24,41,Syntax,Critical,2021-01-07,2020-04-10,Fixed,4693
+682,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,64,8.47,26,Performance,High,2022-01-09,2024-01-29,Fixed,3473
+683,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,112,9.28,40,Compilation,High,2021-10-14,2020-02-11,In-Progress,3339
+684,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,192,9.7,20,Logic,Low,2023-01-16,2020-07-18,Verified,1926
+685,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,152,5.13,43,Performance,High,2022-03-03,2021-02-17,Pending,3305
+686,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,213,3.91,20,Syntax,Critical,2023-07-20,2024-03-14,Verified,3172
+687,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,269,8.84,40,Logic,High,2021-10-10,2023-07-23,Fixed,4622
+688,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,179,1.28,12,Performance,Critical,2021-12-24,2021-04-17,In-Progress,3795
+689,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,153,6.9,50,Compilation,Low,2021-05-25,2021-01-28,Pending,4235
+690,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,126,7.29,21,Logic,Medium,2022-06-14,2020-06-01,Pending,2626
+691,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,194,4.67,35,Syntax,Critical,2022-12-30,2020-02-29,Verified,4051
+692,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,254,6.3,49,Syntax,Critical,2024-02-16,2023-02-22,Verified,3267
+693,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,126,7.62,10,Syntax,Critical,2023-12-28,2024-10-25,Pending,4376
+694,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,239,8.55,15,Security,Low,2023-09-14,2023-06-03,Verified,1760
+695,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,280,3.31,15,Security,Critical,2022-05-21,2022-09-07,In-Progress,4096
+696,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,292,8.69,36,Security,Critical,2021-07-15,2020-12-17,In-Progress,3177
+697,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,283,2.27,7,Runtime,Low,2023-12-09,2020-07-02,Pending,1815
+698,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,261,9.87,38,Syntax,High,2022-12-27,2020-08-19,In-Progress,2373
+699,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,128,5.54,38,Syntax,Medium,2021-08-04,2024-11-29,Verified,3072
+700,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,111,4.88,48,Security,Critical,2020-12-26,2023-08-03,Pending,2080
+701,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,195,4.73,17,Compilation,Low,2021-11-26,2020-09-14,Verified,1204
+702,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,273,6.58,11,Runtime,Medium,2023-04-09,2024-01-13,Fixed,4389
+703,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,250,3.61,28,Compilation,Critical,2020-07-16,2021-10-07,Verified,4694
+704,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,121,7.1,48,Syntax,Low,2021-12-29,2023-09-23,In-Progress,1001
+705,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,209,8.0,50,Security,Medium,2022-03-01,2020-05-24,In-Progress,3919
+706,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,82,5.34,5,Runtime,Medium,2021-12-02,2023-03-22,Pending,1128
+707,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,267,8.36,37,Performance,Medium,2020-02-02,2021-05-14,In-Progress,3467
+708,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,249,2.15,12,Security,Critical,2024-12-19,2024-09-22,Pending,2939
+709,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,59,3.58,50,Syntax,Low,2021-08-03,2021-05-07,Pending,3872
+710,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,228,6.94,13,Runtime,High,2024-06-03,2020-05-02,In-Progress,2341
+711,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,233,9.28,7,Runtime,Medium,2021-01-13,2021-04-09,Pending,3690
+712,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,259,5.98,28,Security,Low,2024-06-25,2022-08-22,Verified,1167
+713,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,74,3.89,39,Syntax,Medium,2022-03-20,2023-11-21,Verified,3845
+714,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,109,9.74,50,Logic,Critical,2022-09-24,2024-07-06,Verified,2463
+715,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,208,4.87,47,Performance,Low,2023-03-18,2024-05-12,Pending,1565
+716,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,108,4.88,48,Runtime,Critical,2024-02-16,2022-12-20,Verified,3129
+717,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,147,8.47,5,Syntax,High,2020-03-10,2024-08-30,Pending,3515
+718,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,124,9.54,20,Performance,Critical,2023-01-30,2023-12-26,In-Progress,1832
+719,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,237,3.15,29,Runtime,Critical,2024-11-24,2024-02-01,Fixed,3945
+720,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,163,3.17,5,Runtime,Low,2024-04-19,2020-05-12,Verified,1788
+721,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,173,4.02,7,Syntax,Medium,2020-05-08,2022-10-23,In-Progress,2876
+722,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,162,6.18,15,Performance,Low,2021-06-08,2020-07-09,Fixed,1581
+723,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,57,8.97,5,Logic,Medium,2022-11-29,2024-06-04,Verified,3966
+724,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,105,8.9,34,Security,Medium,2020-06-27,2020-01-01,In-Progress,1090
+725,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,49,8.25,6,Compilation,Medium,2024-08-14,2020-09-15,Fixed,2657
+726,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,51,7.92,41,Performance,High,2021-06-03,2024-07-21,In-Progress,1447
+727,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,85,1.39,17,Syntax,Low,2023-09-01,2020-04-30,Verified,3942
+728,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,264,2.22,47,Security,High,2020-03-20,2023-08-12,In-Progress,1372
+729,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,85,1.82,5,Syntax,Medium,2021-02-20,2024-07-24,Pending,1616
+730,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,160,9.79,37,Performance,High,2022-11-08,2021-12-17,Verified,4978
+731,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,74,3.96,15,Compilation,Low,2022-09-16,2023-04-18,Verified,1170
+732,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,40,7.37,24,Runtime,High,2020-01-07,2022-03-21,Fixed,4460
+733,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,161,5.56,9,Syntax,Medium,2021-01-29,2022-07-15,Verified,1668
+734,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,111,5.06,33,Performance,Critical,2023-02-07,2024-10-20,Verified,2118
+735,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,268,8.85,29,Runtime,Medium,2023-11-26,2024-11-01,Fixed,1016
+736,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,133,3.12,37,Logic,Low,2024-06-21,2023-03-04,Fixed,3409
+737,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,176,5.92,30,Compilation,Medium,2024-07-11,2021-12-15,In-Progress,1003
+738,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,293,1.52,7,Syntax,Medium,2020-08-07,2022-03-22,In-Progress,1733
+739,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,262,7.14,24,Performance,Low,2021-11-07,2021-02-22,In-Progress,1293
+740,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,268,9.93,44,Performance,Critical,2021-02-06,2021-05-11,Pending,3755
+741,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,33,1.53,27,Security,High,2024-06-23,2020-01-27,Fixed,1929
+742,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,188,8.16,5,Compilation,Critical,2024-01-03,2024-06-07,Verified,4898
+743,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,300,7.94,19,Syntax,Low,2023-11-08,2024-07-08,In-Progress,4674
+744,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,172,2.15,10,Security,Critical,2020-10-05,2024-12-14,Verified,4650
+745,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,76,9.18,44,Compilation,Medium,2023-11-29,2024-09-16,Verified,3970
+746,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,148,9.37,22,Logic,High,2020-02-19,2022-11-15,In-Progress,3082
+747,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,166,5.1,33,Logic,Medium,2021-03-29,2024-11-23,Pending,2564
+748,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,134,8.55,50,Logic,Critical,2023-07-22,2023-10-16,Verified,3058
+749,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,146,4.09,35,Performance,High,2023-06-19,2021-11-07,Fixed,4459
+750,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,127,7.74,44,Performance,High,2021-03-29,2021-12-08,Verified,3616
+751,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,146,7.68,38,Security,Critical,2020-04-08,2021-11-26,Pending,4034
+752,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,215,7.89,26,Syntax,Critical,2021-01-04,2022-06-19,Fixed,2543
+753,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,34,8.28,28,Logic,Critical,2020-05-12,2020-08-07,In-Progress,3283
+754,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,287,2.34,44,Runtime,Low,2024-11-12,2020-07-16,Pending,2056
+755,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,67,5.96,11,Security,Critical,2021-01-31,2022-03-25,Verified,1595
+756,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,104,1.53,47,Performance,Low,2022-12-26,2020-03-17,Pending,1278
+757,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,102,2.6,12,Syntax,High,2023-04-01,2022-02-24,Pending,4403
+758,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,90,7.67,12,Syntax,Low,2022-11-17,2020-02-18,Fixed,2167
+759,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,175,7.24,16,Security,Critical,2024-06-06,2020-07-25,Verified,2102
+760,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,82,6.23,24,Performance,Medium,2020-09-18,2023-10-29,In-Progress,1829
+761,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,186,3.98,5,Runtime,High,2021-04-24,2023-07-05,Fixed,3958
+762,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,59,6.21,31,Syntax,Low,2023-02-23,2022-06-29,Fixed,2825
+763,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,152,2.72,18,Syntax,High,2020-07-29,2024-04-20,In-Progress,2310
+764,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,225,9.02,16,Compilation,High,2024-09-25,2021-01-10,In-Progress,1170
+765,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,222,5.04,8,Logic,High,2020-10-30,2021-02-14,Fixed,4426
+766,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,34,4.13,34,Runtime,High,2023-08-11,2023-05-05,Verified,2657
+767,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,191,2.88,33,Performance,High,2023-01-02,2022-12-15,Fixed,1323
+768,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,207,5.17,15,Logic,Low,2024-03-09,2022-06-03,Fixed,1997
+769,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,141,6.19,44,Logic,High,2020-12-21,2024-06-10,In-Progress,3708
+770,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,43,2.64,28,Syntax,Low,2022-07-25,2024-05-04,Verified,4005
+771,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,68,1.82,45,Logic,High,2020-03-20,2024-03-25,Verified,3990
+772,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,34,4.75,16,Security,High,2021-08-01,2020-03-08,Fixed,1436
+773,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,196,1.4,39,Syntax,Low,2020-04-05,2020-06-15,Verified,1590
+774,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,81,9.48,43,Security,Medium,2020-04-02,2024-05-24,In-Progress,1662
+775,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,105,2.36,18,Compilation,Low,2020-02-22,2021-11-27,Verified,2809
+776,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,27,4.12,12,Runtime,High,2024-03-02,2021-04-28,Fixed,2042
+777,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,170,5.47,28,Runtime,Low,2023-11-28,2022-07-11,In-Progress,3990
+778,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,288,7.31,50,Performance,Low,2022-01-17,2020-04-29,Fixed,3277
+779,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,265,4.84,20,Security,Low,2022-07-27,2022-12-12,In-Progress,3301
+780,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,27,1.57,49,Compilation,Medium,2021-09-06,2023-09-18,Fixed,2370
+781,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,172,4.53,27,Logic,High,2021-07-06,2023-08-11,In-Progress,3997
+782,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,265,2.06,44,Syntax,Low,2023-06-30,2020-03-09,Fixed,2551
+783,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,181,7.87,29,Compilation,Critical,2023-01-16,2024-08-08,Pending,2902
+784,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,85,8.11,39,Runtime,Medium,2020-08-22,2023-05-04,Fixed,3353
+785,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,22,6.96,29,Runtime,Low,2022-04-18,2020-11-27,Fixed,4587
+786,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,294,6.25,8,Syntax,Critical,2021-03-30,2020-04-27,Pending,2285
+787,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,286,9.44,39,Syntax,Critical,2022-02-05,2022-03-21,Fixed,2903
+788,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,209,1.95,25,Runtime,Medium,2023-08-07,2022-01-24,Pending,4581
+789,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,184,8.55,30,Runtime,Low,2020-06-09,2023-02-05,Pending,3772
+790,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,209,8.13,22,Performance,Low,2021-03-14,2024-10-14,In-Progress,3373
+791,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,205,2.22,31,Runtime,Medium,2020-05-03,2021-03-08,Verified,3751
+792,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,199,5.69,23,Compilation,Critical,2020-01-15,2022-07-08,Pending,4640
+793,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,167,5.86,41,Logic,Medium,2021-02-22,2023-03-06,Pending,4220
+794,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,22,8.08,28,Syntax,High,2022-03-04,2021-02-15,Verified,3694
+795,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,224,1.17,8,Compilation,Critical,2024-03-09,2023-06-09,Fixed,4630
+796,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,58,6.56,20,Syntax,Critical,2020-07-27,2022-08-23,In-Progress,2206
+797,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,297,6.88,15,Performance,High,2020-07-04,2021-06-18,Fixed,2122
+798,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,20,8.5,28,Syntax,Medium,2024-07-20,2022-11-05,Pending,2782
+799,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,162,4.68,8,Security,Low,2020-07-12,2024-08-05,Verified,4442
+800,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,269,9.56,45,Logic,Medium,2024-01-30,2022-05-02,Pending,2262
+801,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,124,8.82,39,Syntax,High,2024-03-15,2023-07-02,Fixed,1616
+802,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,251,7.51,27,Logic,High,2022-10-15,2021-08-13,In-Progress,1776
+803,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,41,7.68,28,Logic,Medium,2021-06-06,2023-12-15,Pending,3849
+804,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,220,6.7,32,Runtime,Medium,2020-09-27,2024-11-07,Verified,4343
+805,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,115,3.49,7,Runtime,High,2024-04-16,2023-09-26,Pending,3032
+806,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,276,8.74,27,Compilation,High,2021-09-19,2024-02-02,In-Progress,1240
+807,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,259,9.52,11,Syntax,Low,2021-12-01,2023-05-02,Pending,4125
+808,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,54,7.54,37,Security,Medium,2020-11-01,2021-11-17,In-Progress,4385
+809,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,259,4.15,5,Syntax,High,2023-12-17,2020-03-30,Verified,4222
+810,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,213,8.99,22,Performance,High,2021-06-07,2021-03-30,In-Progress,3635
+811,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,259,9.97,8,Logic,Medium,2024-05-16,2020-05-30,Fixed,4812
+812,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,167,4.88,47,Performance,Low,2024-07-21,2022-05-14,Fixed,2955
+813,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,18,5.94,35,Runtime,High,2021-06-03,2022-07-10,In-Progress,3299
+814,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,283,8.27,49,Syntax,Critical,2023-12-31,2022-07-25,Verified,2240
+815,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,187,3.62,5,Compilation,Low,2020-06-09,2022-06-27,Verified,4886
+816,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,112,6.14,8,Logic,Medium,2024-02-01,2022-08-14,Verified,2138
+817,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,45,3.17,35,Compilation,Low,2020-06-27,2020-12-30,In-Progress,1435
+818,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,280,9.53,8,Runtime,High,2020-01-20,2024-07-16,Fixed,1709
+819,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,225,4.11,43,Syntax,Critical,2021-08-30,2021-07-19,Fixed,4280
+820,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,52,2.58,27,Performance,Medium,2023-02-23,2023-01-01,Fixed,4534
+821,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,133,4.21,36,Security,High,2024-04-03,2021-05-14,Fixed,4064
+822,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,169,9.63,8,Runtime,High,2021-07-25,2023-09-12,Fixed,3480
+823,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,177,1.51,29,Security,Low,2020-08-15,2021-08-01,Pending,2486
+824,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,64,6.02,22,Compilation,Medium,2023-07-11,2023-06-09,In-Progress,2629
+825,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,256,3.33,11,Security,Critical,2021-09-27,2024-03-18,In-Progress,1820
+826,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,295,2.94,42,Runtime,Low,2022-09-30,2020-08-11,Pending,4754
+827,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,134,9.73,47,Logic,Medium,2023-06-15,2020-03-31,Pending,4720
+828,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,238,2.71,32,Runtime,High,2024-06-15,2024-12-20,In-Progress,2641
+829,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,41,5.44,44,Logic,Critical,2023-10-16,2024-05-23,Pending,4154
+830,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,263,6.82,16,Syntax,Critical,2024-04-16,2023-08-05,In-Progress,4510
+831,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,41,2.79,36,Security,Low,2023-09-24,2023-03-06,Fixed,1277
+832,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,14,6.78,15,Security,Medium,2020-10-23,2021-10-14,Verified,3962
+833,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,95,2.91,50,Performance,High,2024-09-27,2024-12-08,In-Progress,1208
+834,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,225,9.7,9,Compilation,Critical,2023-04-08,2023-11-20,Fixed,3134
+835,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,107,4.86,39,Security,Low,2022-11-23,2020-06-30,In-Progress,2677
+836,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,96,4.32,11,Security,High,2022-04-23,2023-01-11,Pending,1976
+837,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,191,4.93,36,Syntax,High,2023-09-11,2021-03-15,In-Progress,1605
+838,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,263,6.5,19,Syntax,High,2024-10-12,2024-03-13,Fixed,3684
+839,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,118,8.43,25,Security,Critical,2021-03-06,2024-12-27,In-Progress,3245
+840,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,93,5.56,26,Security,Medium,2022-05-09,2023-05-01,Fixed,3744
+841,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,36,3.97,10,Syntax,Low,2021-05-19,2022-09-24,Pending,1824
+842,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,186,7.31,23,Logic,Critical,2022-12-25,2020-04-29,Pending,3441
+843,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,64,8.52,20,Security,Low,2020-07-18,2024-04-10,Verified,3253
+844,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,122,7.42,14,Logic,Medium,2021-09-18,2024-12-21,Pending,3375
+845,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,35,8.19,20,Syntax,Medium,2021-04-06,2022-04-05,Fixed,4486
+846,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,262,6.59,20,Runtime,Medium,2020-06-12,2021-09-20,In-Progress,1194
+847,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,274,1.28,12,Syntax,High,2021-02-26,2020-02-23,Pending,3112
+848,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,187,5.53,6,Runtime,High,2024-01-07,2022-08-22,Pending,4405
+849,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,11,6.29,23,Logic,Medium,2021-09-05,2023-09-25,Verified,3091
+850,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,19,9.75,43,Runtime,Critical,2022-08-31,2021-07-15,In-Progress,1376
+851,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,290,2.31,34,Performance,High,2023-10-08,2021-11-04,Verified,2391
+852,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,116,2.87,20,Runtime,Low,2022-03-31,2024-05-17,Verified,2384
+853,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,74,3.45,49,Compilation,Medium,2020-11-13,2021-02-02,Pending,3508
+854,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,242,2.73,37,Syntax,Low,2021-08-10,2024-04-03,Pending,2593
+855,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,276,9.59,19,Runtime,Critical,2024-04-21,2020-10-10,Fixed,3968
+856,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,288,2.49,44,Compilation,Critical,2024-10-08,2024-01-14,Verified,2482
+857,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,218,8.57,10,Security,High,2020-11-16,2022-09-30,Fixed,2952
+858,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,250,4.3,30,Security,Critical,2021-12-26,2023-02-06,Fixed,4519
+859,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,184,9.79,11,Runtime,High,2021-03-04,2021-07-17,Verified,2890
+860,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,168,2.11,20,Syntax,High,2022-07-14,2021-07-07,Verified,4060
+861,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,254,8.63,46,Syntax,High,2020-11-11,2024-06-28,Verified,2899
+862,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,134,5.69,40,Logic,Low,2024-10-10,2020-11-13,In-Progress,4437
+863,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,149,2.61,20,Syntax,High,2024-05-05,2020-05-05,In-Progress,2615
+864,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,271,5.39,9,Security,Critical,2023-06-29,2022-02-20,In-Progress,2666
+865,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,153,4.12,37,Compilation,High,2022-07-24,2022-02-02,Verified,3712
+866,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,38,2.94,30,Compilation,High,2022-08-06,2020-01-22,Pending,2465
+867,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,48,3.59,28,Logic,Low,2022-03-09,2024-08-28,In-Progress,1859
+868,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,48,3.09,27,Runtime,Critical,2024-01-06,2024-09-22,In-Progress,3221
+869,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,97,8.52,21,Security,Low,2024-01-28,2024-02-06,Pending,3400
+870,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,78,8.36,39,Logic,Low,2023-01-22,2024-04-02,Verified,2179
+871,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,158,1.29,41,Runtime,Low,2022-11-21,2021-11-18,Fixed,3780
+872,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,187,2.61,37,Performance,Medium,2020-06-14,2024-01-05,Verified,4074
+873,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,21,3.03,42,Performance,Low,2023-12-20,2023-08-22,Verified,1001
+874,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,143,9.45,50,Compilation,Medium,2023-02-15,2020-08-29,Fixed,3946
+875,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,41,5.2,46,Runtime,High,2021-02-05,2023-06-22,Fixed,1653
+876,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,135,2.33,14,Syntax,High,2022-06-20,2023-07-12,Fixed,2801
+877,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,280,1.65,18,Performance,Critical,2024-11-19,2024-07-31,In-Progress,2102
+878,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,247,8.96,30,Runtime,Medium,2021-04-26,2020-02-05,Verified,4499
+879,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,217,9.7,33,Syntax,Critical,2021-03-15,2022-05-30,Pending,1673
+880,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,20,8.15,36,Runtime,High,2020-09-25,2024-10-02,Fixed,4986
+881,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,255,4.14,25,Performance,Medium,2023-03-22,2022-01-09,Verified,1165
+882,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,65,7.44,10,Logic,Medium,2023-07-21,2021-04-20,Fixed,3699
+883,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,218,2.9,7,Syntax,High,2020-12-15,2022-12-01,In-Progress,3023
+884,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,171,3.4,13,Runtime,Low,2024-01-07,2020-10-02,In-Progress,4227
+885,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,269,3.93,11,Security,Critical,2020-06-23,2024-11-18,Verified,4096
+886,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,58,9.4,11,Syntax,High,2021-10-31,2023-08-18,In-Progress,2495
+887,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,298,9.82,9,Syntax,Low,2020-11-28,2024-01-30,Pending,4449
+888,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,252,2.05,18,Security,High,2024-03-25,2020-04-01,Pending,4984
+889,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,192,6.06,42,Security,Low,2022-12-05,2021-11-09,Fixed,2855
+890,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,154,7.22,27,Compilation,Medium,2022-04-07,2021-08-19,Verified,1700
+891,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,263,2.24,27,Performance,Low,2024-01-30,2023-07-02,Pending,4119
+892,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,207,8.28,38,Performance,Low,2021-10-06,2020-11-26,Verified,2310
+893,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,243,8.06,24,Syntax,Medium,2021-04-25,2020-10-10,Fixed,4526
+894,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,243,8.55,38,Syntax,Critical,2021-07-22,2021-04-27,Pending,4456
+895,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,214,9.11,43,Logic,Medium,2023-06-20,2021-10-24,Pending,1978
+896,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,202,3.79,32,Security,High,2024-10-31,2022-06-19,Fixed,3753
+897,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,267,9.03,25,Compilation,High,2023-08-11,2024-01-18,Verified,1843
+898,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,98,9.44,35,Performance,Critical,2023-01-20,2024-05-26,Fixed,3672
+899,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,226,6.33,14,Runtime,Medium,2024-04-05,2024-02-21,Verified,2620
+900,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,52,2.7,10,Security,Medium,2024-12-03,2021-01-25,Verified,1588
+901,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,244,9.22,6,Runtime,Medium,2021-09-02,2023-01-24,Pending,4956
+902,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,159,4.35,11,Compilation,Critical,2023-12-26,2023-01-03,In-Progress,1975
+903,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,255,5.52,32,Syntax,Medium,2023-04-05,2024-02-23,Pending,2011
+904,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,121,5.65,30,Compilation,Medium,2024-01-05,2023-12-30,Pending,1940
+905,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,140,3.35,6,Compilation,Low,2022-01-10,2023-06-27,Fixed,2545
+906,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,92,7.01,14,Security,High,2023-09-10,2021-07-12,Pending,3465
+907,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,288,7.09,47,Runtime,High,2022-06-08,2022-12-04,Verified,4844
+908,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,24,7.65,19,Logic,Medium,2021-06-19,2022-07-19,Verified,2380
+909,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,76,3.84,40,Security,Low,2024-12-18,2024-05-03,In-Progress,1006
+910,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,81,1.15,16,Performance,Critical,2021-09-05,2020-02-02,In-Progress,2851
+911,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,194,7.19,11,Security,Low,2024-11-24,2024-05-28,In-Progress,2267
+912,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,137,7.91,14,Logic,High,2021-03-16,2021-07-11,Pending,3174
+913,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,221,7.14,6,Performance,Low,2020-08-06,2021-02-10,Pending,3289
+914,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,292,1.75,14,Performance,High,2022-07-09,2022-03-29,Verified,4689
+915,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,154,6.08,21,Syntax,Low,2022-09-26,2022-06-29,Pending,1817
+916,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,105,5.76,36,Compilation,High,2023-05-03,2022-06-07,Verified,4056
+917,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,297,8.16,7,Security,Low,2024-06-05,2021-02-14,Fixed,3069
+918,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,96,4.55,48,Runtime,Critical,2022-12-12,2024-06-25,Verified,4510
+919,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,135,7.93,34,Performance,Critical,2023-06-14,2021-08-22,In-Progress,3146
+920,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,22,5.35,49,Security,Low,2020-10-02,2023-02-15,Pending,2571
+921,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,115,8.85,13,Security,Medium,2023-12-16,2022-07-10,Verified,1524
+922,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,156,8.84,39,Logic,Medium,2022-11-22,2023-06-15,Verified,2782
+923,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,91,6.98,35,Syntax,High,2022-06-15,2023-06-11,In-Progress,1098
+924,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,47,7.15,16,Logic,Medium,2024-01-12,2021-06-09,In-Progress,1618
+925,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,88,3.4,44,Runtime,Medium,2021-04-06,2022-10-30,Fixed,2390
+926,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,288,9.49,29,Security,High,2024-12-07,2021-09-02,Fixed,1223
+927,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,167,2.26,48,Logic,Low,2024-08-11,2021-10-07,Pending,3115
+928,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,112,1.67,20,Performance,Medium,2023-12-28,2020-09-25,Pending,1835
+929,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,132,7.19,45,Runtime,Medium,2023-06-24,2020-06-22,Pending,3288
+930,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,22,5.88,20,Compilation,Low,2021-12-07,2020-01-21,In-Progress,1571
+931,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,296,2.61,45,Compilation,High,2022-01-31,2020-11-24,Fixed,3624
+932,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,60,7.3,25,Runtime,Medium,2023-06-19,2023-04-03,Fixed,3271
+933,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,114,9.53,41,Security,Critical,2020-04-23,2022-12-07,Verified,4919
+934,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,201,9.68,30,Syntax,Medium,2020-09-06,2021-10-07,In-Progress,2438
+935,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,65,5.6,18,Compilation,Critical,2022-03-13,2022-04-05,Pending,4126
+936,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,54,1.27,20,Security,High,2022-06-17,2023-03-05,Pending,1076
+937,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,224,1.66,38,Performance,High,2020-05-02,2020-07-10,Pending,4046
+938,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,34,3.21,19,Syntax,Critical,2024-10-13,2023-03-22,In-Progress,1159
+939,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,202,2.62,27,Logic,Critical,2020-12-10,2021-07-29,Fixed,2421
+940,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,186,2.56,13,Logic,Medium,2024-10-02,2024-12-29,Verified,2068
+941,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,75,7.16,31,Performance,Medium,2021-12-31,2020-06-16,In-Progress,2910
+942,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,83,7.7,44,Compilation,Critical,2021-09-08,2024-07-26,Pending,3724
+943,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,221,6.9,11,Syntax,Critical,2022-03-17,2024-07-15,In-Progress,3963
+944,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,81,8.51,32,Logic,Critical,2021-08-22,2023-01-30,Verified,2756
+945,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,169,6.13,27,Runtime,Low,2023-11-10,2023-03-17,Verified,2462
+946,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,183,8.59,31,Runtime,High,2024-04-11,2021-04-12,Pending,4226
+947,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,58,1.85,31,Performance,Medium,2021-05-09,2024-11-24,Fixed,1168
+948,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,88,2.72,22,Runtime,High,2021-06-30,2024-11-08,In-Progress,4378
+949,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,241,5.79,42,Syntax,High,2024-01-23,2021-04-18,Pending,2908
+950,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,129,8.09,31,Syntax,High,2021-12-14,2023-11-28,Fixed,2427
+951,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,136,2.02,37,Logic,Medium,2023-09-06,2020-12-23,In-Progress,3167
+952,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,59,7.13,25,Logic,Critical,2020-04-25,2023-10-29,Verified,1182
+953,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,246,7.08,38,Runtime,High,2023-03-29,2024-11-23,Verified,1439
+954,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,211,6.84,41,Logic,Medium,2022-04-25,2021-09-14,Fixed,3447
+955,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,103,9.39,24,Performance,Critical,2024-02-23,2023-11-19,Fixed,2654
+956,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,123,3.93,5,Syntax,Medium,2022-03-06,2020-09-25,Pending,4269
+957,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,178,7.26,24,Compilation,Low,2023-05-05,2020-06-05,Verified,4287
+958,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,218,2.59,24,Performance,Medium,2020-11-24,2022-07-06,Fixed,2779
+959,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,60,2.65,49,Security,High,2022-01-22,2024-02-10,Verified,4458
+960,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,272,5.83,14,Performance,Critical,2023-08-23,2024-09-09,Verified,3654
+961,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,134,2.18,34,Runtime,Low,2021-07-23,2024-11-02,Verified,3814
+962,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,88,1.49,30,Performance,High,2024-08-06,2020-04-27,Verified,3286
+963,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,192,4.72,36,Security,Critical,2020-10-15,2023-09-27,In-Progress,2247
+964,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,153,2.55,26,Security,Medium,2020-03-01,2022-11-03,In-Progress,2501
+965,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,139,5.6,29,Security,Critical,2020-04-26,2022-10-23,In-Progress,3994
+966,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,253,9.33,16,Security,Medium,2021-08-13,2020-06-04,In-Progress,3843
+967,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,273,5.52,47,Compilation,High,2022-01-02,2020-08-25,Fixed,4122
+968,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,106,9.36,45,Logic,High,2020-11-01,2023-04-28,Pending,3995
+969,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,274,2.82,22,Compilation,High,2024-05-07,2022-02-18,Verified,2020
+970,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,67,2.88,8,Logic,Critical,2020-04-21,2023-07-20,Fixed,4844
+971,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,154,7.63,39,Compilation,Medium,2022-10-13,2021-11-01,Pending,2504
+972,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,62,7.83,27,Syntax,High,2023-12-30,2021-10-02,In-Progress,4443
+973,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,132,6.8,45,Logic,Medium,2023-07-30,2024-09-14,Fixed,1925
+974,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,273,9.25,6,Runtime,Critical,2024-04-28,2023-09-07,Verified,4292
+975,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,212,2.06,49,Compilation,High,2023-07-09,2024-07-14,Fixed,4601
+976,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,137,7.12,11,Runtime,Critical,2020-06-03,2022-09-05,Pending,1310
+977,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,buggy,69,2.26,10,Runtime,High,2020-10-20,2024-08-17,Fixed,2162
+978,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,182,3.76,6,Compilation,Medium,2021-07-21,2023-04-05,Verified,4196
+979,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,292,1.47,35,Syntax,Medium,2020-05-15,2024-02-19,Verified,3846
+980,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,253,8.99,50,Security,Low,2023-12-19,2024-10-10,In-Progress,1570
+981,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,266,2.82,36,Logic,Low,2020-01-26,2020-05-12,Fixed,4251
+982,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,78,4.29,17,Logic,Medium,2023-03-21,2022-09-15,In-Progress,1386
+983,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,buggy,152,9.22,18,Logic,High,2020-01-04,2023-06-25,Fixed,3924
+984,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,89,8.38,28,Performance,Medium,2024-06-22,2024-06-08,Verified,2517
+985,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,buggy,13,7.94,23,Security,Low,2020-01-27,2022-10-26,Verified,1488
+986,Python,"def add(a, b): return a - b","def add(a, b): return a + b",Incorrect operator usage.,fixed,45,3.64,32,Performance,Low,2020-03-17,2021-11-15,Pending,2410
+987,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,126,6.72,30,Syntax,Low,2022-02-27,2022-08-13,In-Progress,3201
+988,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,37,2.49,15,Security,Low,2023-11-04,2021-04-16,Verified,1890
+989,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,191,4.56,27,Syntax,Low,2022-11-27,2024-12-03,Pending,4803
+990,JavaScript,"let x = 10;
+if(x = 5) {console.log('Bug');}","let x = 10;
+if(x === 5) {console.log('Bug');}",Incorrect comparison operator.,fixed,182,2.6,9,Runtime,Low,2021-09-11,2023-11-25,Pending,1071
+991,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,buggy,231,9.06,23,Security,Critical,2021-08-10,2024-09-21,Verified,4777
+992,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,269,4.39,9,Runtime,High,2020-04-17,2021-10-20,Fixed,1308
+993,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,74,3.41,19,Performance,Critical,2023-07-27,2024-05-28,Pending,2901
+994,Java,if (x = 5) {System.out.println('Hello');},if (x == 5) {System.out.println('Hello');},Assignment instead of comparison.,fixed,251,9.66,38,Security,Medium,2024-03-10,2024-06-28,In-Progress,1482
+995,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,218,1.81,31,Runtime,Low,2022-09-06,2023-03-13,In-Progress,3202
+996,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,124,1.35,15,Security,Critical,2020-06-19,2022-05-21,In-Progress,4105
+997,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,278,2.88,30,Security,Medium,2020-08-13,2023-05-09,Pending,3065
+998,C,"for(int i=0; i<10; i++) printf('%d', i);","for(int i=0; i<10; i++) { printf('%d', i); }",Missing braces in loop.,fixed,300,2.58,37,Syntax,Medium,2023-08-17,2022-09-13,Verified,3121
+999,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,buggy,187,1.14,44,Compilation,Medium,2023-11-22,2020-06-11,Verified,4432
+1000,C++,cout << Hello;,cout << 'Hello';,Missing quotes around string.,fixed,171,8.86,30,Syntax,Medium,2024-03-17,2020-04-15,Fixed,4423

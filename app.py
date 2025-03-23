@@ -1,34 +1,35 @@
 import streamlit as st
-import torch
-from transformers import T5ForConditionalGeneration, RobertaTokenizer
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
+from huggingface_hub import login
 
-# Load model
-MODEL_NAME = "bug_fixing_t5_model"  # Ensure the model is trained & saved here
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+# Authenticate Hugging Face (only needed if model is private)
+HUGGINGFACE_TOKEN = ""  # Replace with your token
+login(token=HUGGINGFACE_TOKEN)
 
-try:
-    model = T5ForConditionalGeneration.from_pretrained(MODEL_NAME).to(device)
-    tokenizer = RobertaTokenizer.from_pretrained(MODEL_NAME)
-    st.success("✅ Model loaded successfully!")
-except Exception as e:
-    st.error(f"❌ Error loading model: {e}")
+# Define the model name
+MODEL_NAME = "Pujitha633/bug_fixing_t5_model"  # Ensure this name is correct
 
-# Function to fix buggy code
-def fix_code(buggy_code):
-    """Generate a fixed version of the buggy code."""
-    input_text = "fix: " + buggy_code
-    input_ids = tokenizer.encode(input_text, return_tensors="pt").to(device)
-    output_ids = model.generate(input_ids, max_length=512)
-    fixed_code = tokenizer.decode(output_ids[0], skip_special_tokens=True)
-    return fixed_code
+@st.cache_resource
+def load_model():
+    try:
+        tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_auth_token=True)
+        model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME, use_auth_token=True)
+        return model, tokenizer
+    except Exception as e:
+        st.error(f"Error loading model: {e}")
+        return None, None
 
-# Streamlit UI
-st.title("🛠️ Bug Detection & Auto Fixing System")
-user_input = st.text_area("🔍 Enter buggy code:")
-if st.button("Fix Code"):
-    if user_input.strip():
-        fixed_output = fix_code(user_input)
-        st.subheader("✅ Fixed Code:")
-        st.code(fixed_output, language='python')
-    else:
-        st.warning("⚠️ Please enter some code to fix.")
+st.title("Bug Fixing Model")
+st.write("Enter code with bugs, and get a fixed version.")
+
+model, tokenizer = load_model()
+
+if model is not None:
+    user_input = st.text_area("Enter buggy code:")
+    if st.button("Fix Code"):
+        inputs = tokenizer(user_input, return_tensors="pt", padding=True, truncation=True)
+        output = model.generate(**inputs)
+        fixed_code = tokenizer.decode(output[0], skip_special_tokens=True)
+        st.code(fixed_code, language="python")
+else:
+    st.error("Model could not be loaded. Check authentication and model name.")

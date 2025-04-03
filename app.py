@@ -1,35 +1,48 @@
 import streamlit as st
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
-from huggingface_hub import login
+import pandas as pd
+import matplotlib.pyplot as plt
+import sqlite3
 
-# Authenticate Hugging Face (only needed if model is private)
-HUGGINGFACE_TOKEN = ""  # Replace with your token
-login(token=HUGGINGFACE_TOKEN)
+# Connect to SQLite Database (You can switch to PostgreSQL or MongoDB)
+conn = sqlite3.connect("bug_metrics.db")
+cursor = conn.cursor()
 
-# Define the model name
-MODEL_NAME = "Pujitha633/bug_fixing_t5_model"  # Ensure this name is correct
+# Create table if not exists
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS bug_metrics (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        bug_type TEXT,
+        severity TEXT,
+        detected_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )
+''')
+conn.commit()
 
-@st.cache_resource
-def load_model():
-    try:
-        tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME, use_auth_token=True)
-        model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_NAME, use_auth_token=True)
-        return model, tokenizer
-    except Exception as e:
-        st.error(f"Error loading model: {e}")
-        return None, None
+# Streamlit UI
+st.title("Bug Detection Dashboard")
 
-st.title("Bug Fixing Model")
-st.write("Enter code with bugs, and get a fixed version.")
+# Fetch stored bug metrics
+df = pd.read_sql_query("SELECT * FROM bug_metrics", conn)
 
-model, tokenizer = load_model()
+if not df.empty:
+    st.subheader("Bug Metrics Overview")
 
-if model is not None:
-    user_input = st.text_area("Enter buggy code:")
-    if st.button("Fix Code"):
-        inputs = tokenizer(user_input, return_tensors="pt", padding=True, truncation=True)
-        output = model.generate(**inputs)
-        fixed_code = tokenizer.decode(output[0], skip_special_tokens=True)
-        st.code(fixed_code, language="python")
+    # Display DataFrame
+    st.dataframe(df)
+
+    # Bug Type Distribution
+    st.subheader("Bug Type Distribution")
+    fig, ax = plt.subplots()
+    df["bug_type"].value_counts().plot(kind="bar", ax=ax)
+    st.pyplot(fig)
+
+    # Bug Severity Distribution
+    st.subheader("Bug Severity Distribution")
+    fig, ax = plt.subplots()
+    df["severity"].value_counts().plot(kind="pie", autopct="%1.1f%%", ax=ax)
+    st.pyplot(fig)
 else:
-    st.error("Model could not be loaded. Check authentication and model name.")
+    st.info("No bug data available. Start testing to populate metrics!")
+
+# Close connection
+conn.close()
